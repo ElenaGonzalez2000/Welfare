@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welfare</title>
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="shortcut icon" href="../imagenes/favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Karla&family=Poppins:wght@200&family=Quicksand:wght@300&family=Roboto:wght@500&display=swap');
+    </style>
+
+</head>
+<body>
+    <header class="header">        
+        <div class="logoDelMenu">
+            <a href="../index.html"><img src="../imagenes/logo-entero-welfare.png" alt="" srcset="logo de la empresa"></a>
+        </div>
+        <nav class="menu"> 
+            <ul>
+                <li>
+                    <a href="./servicios.html">Servicios</a>
+                    <a href="./nosotros.html">Nosotros</a>
+                    <a href="./contacto.html">Contacto</a>
+                    <a href="./soporte tecnico.html">Soporte Tecnico</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainform">
+        <div class="fomularioYMapa">
+            <div class="formulario">
+                <form action="">
+                    <h3 class="tituloDelForm">Dejanos tu consulta</h3>    
+                    <label for="nombre"></label>
+                    <input type="text" name="nombre" id="" placeholder="Nombre" class="formulario__nombre">
+                    <label for="nombre"></label>
+                    <input type="text" name="apellido" id="" placeholder="Apellido" class="formulario__apellido">
+                    <select name="pais" id="" class="formulario__pais">
+                        <option value="arg">Argentina</option>
+                        <option value="chi">Chile</option>
+                        <option value="bol">Bolivia</option>
+                        <option value="par">Paraguay</option>
+                        <option value="uru">Uruguay</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <label for="celular"></label>
+                    <input type="number" name="celular" id="" placeholder="Celular" class="formulario__cel">
+                    <label for="e-mail"></label> 
+                    <input type="email" name="e-mail" id="" placeholder="E-mail" class="formulario__email">
+                    <label for="consulta"></label>
+                    <textarea name="consulta" id="" cols="25" rows="5" placeholder="Tu consulta" class="formulario__consulta"></textarea>
+                    <input type="submit" value="Enviar" class="formulario__boton">
+                    <input type="checkbox" value="ofertas" name="checkbox" id="" class="formulario__checkbox"><b>Me gustaria recibir ofertas</b>
+                </form>
+            </div>
+            <div class="mapa">
+                <p class="mapa__direccion">Sarmiento 1234</p>
+                <p class="mapa__ciudad">CABA, Buenos Aires</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d822.7961423135345!2d-58.575410770793816!3d-34.42206659878171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca5979855c3a7%3A0xf24b1498f38f0ae3!2sSarmiento%20300%2C%20Tigre%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1648071778537!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footerDireccion">
+            <p><b>Welfare</b></p>
+            <p>Sarmiento 1234</p>
+            <p>CABA, Buenos Aires</p>          
+        </div>     
+        <div class="footerDatos">
+            <p>tel 011 1234567</p>
+            <p>cel 011 15 12345678</p>
+            <p>email welfare@gmail.com</p>
+        </div>
+        <div class="footerRedes">
+            <p>Facebook</p>
+            <p>Instragram</p>
+            <p>YouTube</p>
+        </div>
+        <div class="formFooter">
+            <form action="">
+                <p class="formFooter__titulo">Deje su mail para resivir ofertas:</p>
+                <label for="e-mail"></label>
+                <input type="email" name="e-mail" id="" placeholder="Ingrese su e-mail" class="formFooter__form">
+                <input type="submit" value="Enviar" class="formFooter__btn">
+            </form>
+        </div>    
+    </footer>
+</body>
+</html>
