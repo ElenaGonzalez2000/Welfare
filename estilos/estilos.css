@@ -7,33 +7,35 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background: rgb(255,255,255);
-    background: linear-gradient(49deg, rgba(255,255,255,1) 0%, rgba(220,231,231,1) 99%);
 }
 
-.logoDelMenu img{
+.logoDelMenu img {
     width: 250px;
 }
 
 /* NAV */
 
 header {
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 4rem;
 }
-.menu ul{
+
+.menu ul {
     display: flex;
     align-items: center;
 }
-.menu li a{
+
+.menu li a {
     margin-right: 7px;
     margin-left: 7px;
     color: black;
     font-weight: bold;
 }
-.menu a:hover{
+
+.menu a:hover {
     color: #4ed9cb;
 }
 
@@ -43,7 +45,7 @@ header {
     width: 100%;
 }
 
-.tituloPrincipal{
+.tituloPrincipal {
     font-size: 100px;
     width: 700px;
     position: absolute;
@@ -53,6 +55,7 @@ header {
     text-align: end;
     color: rgba(26, 24, 24, 0.733);
 }
+
 .textoDelTitulo {
     font-size: 37px;
     position: absolute;
@@ -71,10 +74,12 @@ header {
     padding: 15px;
     margin-top: 52px;
 }
-.serviciosIndex__logos{
+
+.serviciosIndex__logos {
     width: 200px;
 }
-.serviciosIndex{
+
+.serviciosIndex {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -84,33 +89,57 @@ header {
     margin-right: 50px;
     text-align: center;
 }
-.serviciosIndex__texto{
+
+.serviciosIndex__texto {
     font-size: 25px;
     width: 200px;
     margin-top: 10px;
-    text-decoration: double;
+    font-weight: bold;
+    color: #363535;
 }
+
 .botonDos {
     display: flex;
     text-align: center;
     font-size: 35px;
-    color: black;
+    color: rgb(37, 34, 34);
     flex-direction: row;
     justify-content: center;
     margin-top: 60px;
-    background: rgb(235, 226, 226);
-    background: linear-gradient(49deg, rgba(235,226,226,1) 0%, rgba(217,244,244,1) 100%);
-    margin-right: 500px;
-    margin-left: 500px;
+    margin-bottom: 50px;
+    background: rgb(235, 228, 228);
+    background: linear-gradient(49deg, rgb(255, 255, 255) 0%, rgb(78, 217, 203) 100%);
+    margin-right: 40%;
+    margin-left: 40%;
     border-radius: 10px;
     padding: 10px;
     font-weight: bold;
+    color: #000000af;
 }
-.fondoDegradado{
+
+.botonDos:hover {
+    color: #000000;
+    box-shadow: 0 4px 10px rgba(59, 57, 57, 0.87);
+    transition: all 0.2s ease;
+    font-weight: bold;
+}
+
+.fondoDegradado {
     padding: 12PX;
     border-radius: 5px;
-    background: rgb(235, 226, 226);
-    background: linear-gradient(49deg, rgba(235,226,226,1) 0%, rgba(217,244,244,1) 100%);
+    background: rgb(235, 228, 228);
+    background: linear-gradient(49deg, rgb(255, 255, 255) 0%, rgb(78, 217, 203) 100%);
+    width: 200px;
+    height: 276px;
+}
+
+/* poner despues
+.logoWhatsapp {
+    width: 100px;
+    position: fixed;
+    top: 480px;
+    right: 20px;
+    z-index: 10;
 }
 
 /* FOOTER */
@@ -120,14 +149,15 @@ header {
     background-color: black;
     color: white;
     padding: 20px;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
-.formFooter__form{
+
+.formFooter__form {
     outline: none;
 }
 
 
-/* GRID INDEX */
+/* GRID INDEX (no necesario)
 
 .contenedor {
     display: grid;
@@ -160,62 +190,82 @@ header {
 }
 .footer{
     grid-area: footer;
-}
+} */
 
 /* NOSOTROS */
+.mainNosotros {
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
 .nosotrosTextos {
     display: flex;
-    background: rgb(235, 226, 226);
-    background: linear-gradient(49deg, rgba(235,226,226,1) 0%, rgba(217,244,244,1) 100%);
+    background-color: #3ed8c9af;
     padding: 25px;
     justify-content: center;
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
-    color: rgba(7, 7, 7, 0.678);
-    margin-bottom: 47px;
-    width: 90%;
+    color: rgb(255, 255, 255);
     margin-left: 3%;
     margin-right: 3%;
-
 }
-.nosotrosTitulos{
+
+.segundoTextoNosotros {
+    margin-bottom: 20px;
+}
+
+.nosotrosTitulos {
     font-size: 25px;
     margin-left: 3%;
-    margin-right: 1090px;
-    margin-bottom: 13px;
-    background-color: rgba(144, 214, 219, 0.267);
+    margin-right: 3%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #40dacb36;
     text-align: center;
     border-radius: 10px;
-    color: rgba(0, 0, 0, 0.808);
+    color: #000000a2;
+    font-weight: bold;
+    padding: 5px;
 
 }
 
 /* CONTACTO */
+
 /*FORMULARIO*/
-.mainform{
-    background: rgb(185, 205, 206);
+.imagenDeFondoForm {
+    width: 100%;
+    display: block;
 }
 
-.fomularioYMapa{
+.fomularioYMapa {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    margin-left: 5%;
-    padding-top: 2%;
-    padding-bottom: 3%;
+    margin-left: 2%;
+    padding-top: 1%;
+    position: absolute;
+    top: 90px;
 }
-.formulario{
+
+.formulario {
     display: flex;
     flex-wrap: wrap;
-    width: 39%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 10px;
+    border-radius: 10px;
 }
-.tituloDelForm{
+
+.tituloDelForm {
     font-size: 30px;
     margin-bottom: 4%;
+    width: 60%;
+    color: rgb(255, 255, 255);
 }
-.formulario__nombre{
-    width: 222px;
+
+.formulario__nombre {
+    width: 47%;
     height: 40px;
     border-radius: 5px;
     border-style: none;
@@ -223,8 +273,9 @@ header {
     color: rgb(161, 154, 154);
     outline: none;
 }
-.formulario__apellido{
-    width: 220px;
+
+.formulario__apellido {
+    width: 47%;
     height: 40px;
     border-radius: 5px;
     border-style: none;
@@ -232,8 +283,9 @@ header {
     color: rgb(128, 127, 127);
     outline: none;
 }
+
 .formulario__pais {
-    width: 232px;
+    width: 48.6%;
     height: 40px;
     border-radius: 5px;
     border-style: none;
@@ -242,9 +294,10 @@ header {
     color: rgb(128, 127, 127);
     outline: none;
 }
-.formulario__cel{
-    
-    width: 220px;
+
+.formulario__cel {
+
+    width: 47%;
     height: 40px;
     border-radius: 5px;
     border-style: none;
@@ -253,8 +306,9 @@ header {
     color: rgb(128, 127, 127);
     outline: none;
 }
-.formulario__email{
-    width: 457px;
+
+.formulario__email {
+    width: 96%;
     height: 40px;
     border-radius: 5px;
     border-style: none;
@@ -263,8 +317,9 @@ header {
     color: rgb(128, 127, 127);
     outline: none;
 }
-.formulario__consulta{
-    width: 457px;
+
+.formulario__consulta {
+    width: 96%;
     height: 100px;
     border-radius: 5px;
     border-style: none;
@@ -274,47 +329,506 @@ header {
     color: rgb(128, 127, 127);
     outline: none;
 }
-.formulario__boton{
-    width: 467px;
+
+.formulario__boton {
+    width: 97.5%;
     height: 40px;
     border-radius: 5px;
     border-style: none;
     padding-left: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: black;
-    background-color: rgb(87, 87, 87);
+    color: rgb(255, 255, 255);
+    background-color: rgb(44, 43, 43);
     font-size: 17px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
 }
+
 .formulario__boton:hover {
-    color: rgb(36, 136, 143) !important;
-    box-shadow: 0 4px 10px rgb(0, 0, 0);
+    color: #4ed9cb;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.87);
     transition: all 0.2s ease;
-    background-color: black;
+    background-color: rgb(24, 22, 22);
+}
+
+.formulario__checkbox {
+    color: white;
+    padding-left: 2px;
 }
 
 input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button{
+input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-input[type=number] { -moz-appearance:textfield; 
+
+input[type=number] {
+    -moz-appearance: textfield;
 }
-::placeholder{
+
+::placeholder {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
 }
 
 /*MAPA*/
-.mapa{
+.mapa {
     margin-left: 40px;
-}
-.mapa__direccion{
-    font-size: 25px;
-    font-weight: bold;
-}
-.mapa__ciudad{
-    padding-bottom: 5px;
-    font-size: 17px;
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 10px;
+    border-radius: 10px;
 }
 
+.mapa__direccion {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.mapa__ciudad {
+    padding-bottom: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
+/* SOPORTE */
+
+.formularioSoporte {
+    display: flex;
+    width: 465px;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    background-color: #4949497c;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: px;
+    margin-bottom: px;
+    position: absolute;
+    top: 130px;
+    color: white;
+}
+
+.imgsoporte {
+    width: 100%;
+    display: block;
+}
+
+/* SERVICIOS */
+
+.mainServicios {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.servicios__caja {
+    width: 300px;
+    font-size: 25px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+    padding: 10px;
+    background-color: #4ed9cb81;
+    border-radius: 10px;
+}
+
+.servicios__titulos {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.botonServicios {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-size: 50px;
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+}
+
+/* TAMAÑO LAPTOP 1024px INDEX */
+
+@media screen and (max-width: 1024px) {
+    .tituloPrincipal {
+        font-size: 70px;
+        width: 400px;
+        position: absolute;
+        top: 155px;
+        right: 35px;
+        font-weight: bold;
+        line-height: 100%;
+        text-align: end;
+        color: rgba(26, 24, 24, 0.733);
+    }
+
+    .textoDelTitulo {
+        font-size: 35px;
+        width: 200px;
+        top: 300px;
+        right: 36px;
+    }
+
+    .botonDos {
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+}
+
+/* TAMAÑO TABLET INDEX */
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: block;
+        padding: 5px;
+    }
+
+    .logoDelMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 12px;
+        color: black;
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    .tituloPrincipal {
+        font-size: 50px;
+        width: 300px;
+        position: absolute;
+        top: 155px;
+        right: 35px;
+        font-weight: bold;
+        line-height: 100%;
+        text-align: end;
+        color: rgba(26, 24, 24, 0.733);
+    }
+
+    .textoDelTitulo {
+        font-size: 25px;
+        width: 150px;
+        top: 260px;
+        right: 36px;
+    }
+
+    .textoDeLosLogos {
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    .serviciosIndex {
+        margin: 0%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 220px;
+    }
+
+    .serviciosIndex__logos {
+        width: 120px;
+    }
+
+    .fondoDegradado {
+        height: 200px;
+    }
+
+    .botonDos {
+        font-size: 25px;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}
+
+/* TAMAÑO CELULAR INDEX */
+
+@media screen and (max-width: 480px) {
+
+    .header {
+        display: block;
+        padding: 5px;
+    }
+
+    .logoDelMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 12px;
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+
+    .tituloPrincipal {
+        font-size: 35px;
+        width: 200px;
+        position: absolute;
+        top: 150px;
+        right: 30px;
+        font-weight: bold;
+        line-height: 100%;
+        text-align: end;
+        color: rgba(26, 24, 24, 0.733);
+    }
+
+    .textoDelTitulo {
+        display: none;
+    }
+
+    .textoDeLosLogos {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 5%;
+
+    }
+
+    .serviciosIndex__logos {
+        width: 100px;
+    }
+
+    .serviciosIndex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        text-align: center;
+        height: 650px;
+        width: 100%;
+    }
+
+    .serviciosIndex__texto {
+        font-size: 20px;
+        width: 200px;
+    }
+
+    .fondoDegradado {
+        height: 170px;
+    }
+
+    .botonDos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0%;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+}
+
+/* TAMAÑO TABLET SERVICIOS */
+
+@media screen and (max-width: 768px) {
+    .mainServicios {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .servicios__caja {
+        width: 90%;
+        padding: 10px;
+        margin-top: 40px;
+        margin-bottom: 0%;
+    }
+
+    .botonServicios {
+        font-size: 30px;
+        margin-left: 35%;
+        margin-right: 35%;
+        margin-top: 40px;
+    }
+}
+
+/* TAMAÑO CELULAR SERVICIOS */
+
+@media screen and (max-width: 480px) {
+    .servicios__titulos {
+        font-size: 25px;
+    }
+
+    .servicios__texto {
+        font-size: 20px;
+    }
+
+    .botonServicios {
+        margin-left: 30%;
+        margin-right: 30%;
+        font-size: 20px;
+    }
+}
+
+/* la pagina "nosotros" no se rompe en version celular ni tablet */
+
+/* TAMAÑO TABLET CONTACTO */
+
+@MEDIA screen and (max-width: 768px) {
+    .mainform {
+        background-color: #4ed9cb;
+    }
+
+    .imagenDeFondoForm {
+        display: none;
+    }
+
+    .fomularioYMapa {
+        display: flex;
+        flex-wrap: wrap;
+        width: 91%;
+        margin-left: 3%;
+        padding-bottom: 3%;
+        padding-top: 3%;
+        position: static;
+    }
+
+    .formulario {
+        width: 67%;
+        background-color: #00000000;
+    }
+
+    .mapa {
+        margin-left: 0%;
+        margin-top: 3%;
+        background-color: #00000000;
+    }
+}
+
+/* TAMAÑO CELULAR CONTACTO */
+@media screen and (max-width: 480px) {
+    .mainform {
+        background-color: #4ed9cb;
+    }
+
+    .formularioYMapa {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 700px;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .formulario {
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: #00000000;
+    }
+
+    .formulario__nombre {
+        width: 100%;
+    }
+
+    .formulario__apellido {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .formulario__pais {
+        width: 102%;
+    }
+
+    .formulario__cel {
+        width: 100%;
+    }
+
+    .formulario__email {
+        width: 100%;
+    }
+
+    .formulario__consulta {
+        width: 100%;
+    }
+
+    .formulario__boton {
+        width: 102%;
+    }
+
+    .mapa {
+        width: 100%;
+        background-color: #00000000;
+    }
+
+    .mapaGoogle {
+        width: 90%;
+    }
+}
+
+/* TAMAÑO TABLET SOPORTE TECNICO */
+@media screen and (max-width: 780px) {
+    .mainSoporte {
+        background-color: #4ed9cb;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .imgsoporte {
+        display: none;
+    }
+
+    .formularioSoporte {
+        position: static;
+        background-color: rgba(0, 0, 0, 0);
+        margin-left: 3%;
+    }
+}
+
+/* TAMAÑO CELULAR SOPORTE TECNICO */
+@media screen and (max-width: 480px) {
+    .formularioSoporte {
+        margin-left: 0%;
+        padding: 2%;
+        width: 93%;
+    }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,12 +12,14 @@
         @import url('https://fonts.googleapis.com/css2?family=Karla&family=Poppins:wght@200&family=Quicksand:wght@300&family=Roboto:wght@500&display=swap');
     </style>
 </head>
+
 <body>
-    <header class="header">        
+    <header class="header">
         <div class="logoDelMenu">
-            <a href="../index.html"><img src="../imagenes/logo-entero-welfare.png" alt="" srcset="logo de la empresa"></a>
+            <a href="../index.html"><img src="../imagenes/logo-entero-welfare.png" alt=""
+                    srcset="logo de la empresa"></a>
         </div>
-        <nav class="menu"> 
+        <nav class="menu">
             <ul>
                 <li>
                     <a href="./servicios.html">Servicios</a>
@@ -27,19 +30,18 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div>
-            <p class="tituloSop tituloSop1"><b>¿Necesitas ayuda?</b></p>
-            <p class="tituloSop">¿Tuviste algun problema con alguno de nuestros equipos?</p>
-            <form action="" class="formulariodos">
+    <main class="mainSoporte">
+        <img src="../imagenes/Picsart_22-03-31_19-57-08-410.jpg" alt="" srcset="" class="imgsoporte">
+        <div class="formularioSoporte">
+            <p class="tituloSoporte tituloSoportePrincipal"><b>¿Necesitas ayuda?</b></p>
+            <p class="tituloSoporte">¿Tuviste algun problema con alguno de nuestros equipos?</p>
+            <form action="">
                 <label for="nombre"></label>
-                <input type="text" name="nombre" id="" placeholder="Nombre">
+                <input type="text" name="nombre" id="" placeholder="Nombre" class="formulario__nombre">
                 <label for="apellido"></label>
-                <input type="text" name="apellido" id="" placeholder="Apellido">
-                <label for="celular"></label>
-                <input type="number" name="celular" id="" placeholder="Celular">
+                <input type="text" name="apellido" id="" placeholder="Apellido" class="formulario__apellido">
                 <label for="pais"></label>
-                <select name="pais" id="" class="pyc">
+                <select name="pais" id="" formulario__pais class="formulario__pais">
                     <option value="arg">Argentina</option>
                     <option value="chi">Chile</option>
                     <option value="bol">Bolivia</option>
@@ -47,11 +49,14 @@
                     <option value="uru">Uruguay</option>
                     <option value="otro">Otro</option>
                 </select>
-                <label for="correo"></label>
-                <input type="email" name="email" id="" placeholder="E-mail">
+                <label for="celular"></label>
+                <input type="number" name="celular" id="" placeholder="Celular" class="formulario__cel">
+                <label for="email"></label>
+                <input type="email" name="email" id="" placeholder="E-mail" class="formulario__email">
                 <label for="consulta"></label>
-                <textarea name="consulta" id="" cols="25" rows="5" placeholder="Tu consulta" class="consulta"></textarea>
-                <input type="submit" value="Enviar" class="boton">
+                <textarea name="consulta" id="" cols="25" rows="5" placeholder="Tu consulta"
+                    class="formulario__consulta"></textarea>
+                <input type="submit" value="Enviar" class="formulario__boton">
             </form>
         </div>
     </main>
@@ -59,8 +64,8 @@
         <div class="footerDireccion">
             <p><b>Welfare</b></p>
             <p>Sarmiento 1234</p>
-            <p>CABA, Buenos Aires</p>          
-        </div>     
+            <p>CABA, Buenos Aires</p>
+        </div>
         <div class="footerDatos">
             <p>tel 011 1234567</p>
             <p>cel 011 15 12345678</p>
@@ -78,7 +83,8 @@
                 <input type="email" name="e-mail" id="" placeholder="Ingrese su e-mail" class="formFooter__form">
                 <input type="submit" value="Enviar" class="formFooter__btn">
             </form>
-        </div>    
-    </footer>  
+        </div>
+    </footer>
 </body>
+
 </html>
