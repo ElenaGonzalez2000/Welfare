@@ -21,7 +21,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 60px ;
+    padding: 10px 60px;
+    font-weight: bold;
 }
 
 .menu ul {
@@ -33,10 +34,9 @@ header {
     margin-right: 7px;
     margin-left: 7px;
     color: rgb(222, 223, 224);
-    font-weight: bold;
 }
 
-.menu a:hover {
+.menu li a:hover {
     color: #ffffff;
 }
 
@@ -132,25 +132,17 @@ header {
     width: 200px;
     height: 276px;
 }
+
 .fondoDegradado:hover {
     box-shadow: 0 20px 50px rgb(134, 160, 187);
     transition: all 0.2s ease;
-}
-
-/* poner despues
-.logoWhatsapp {
-    width: 100px;
-    position: fixed;
-    top: 480px;
-    right: 20px;
-    z-index: 10;
 }
 
 /* FOOTER */
 
 .footer {
     display: flex;
-    background-color: rgb(24, 45, 65);
+    background-color: rgb(42, 75, 106);
     color: rgb(240, 241, 245);
     padding: 20px;
     justify-content: space-evenly;
@@ -226,8 +218,8 @@ header {
     margin-right: 3%;
     margin-top: 15px;
     margin-bottom: 15px;
-    background-color: rgb(134, 160, 187);
-    text-align: center;
+    background: rgb(211, 192, 214);
+    background: linear-gradient(0deg, rgba(211, 192, 214, 1) 0%, rgba(134, 160, 187, 1) 100%);    text-align: center;
     border-radius: 10px;
     color: #ffffff;
     font-weight: bold;
@@ -242,6 +234,7 @@ header {
     width: 100%;
     display: none;
 }
+
 .fomularioYMapa {
     display: flex;
     flex-wrap: wrap;
@@ -432,8 +425,9 @@ input[type=number] {
     margin-bottom: 40px;
     margin-top: 40px;
     padding: 15px 40px;
-    background-color: rgba(134, 160, 187, 0.856);
     border-radius: 10px;
+    background: rgb(211, 192, 214);
+    background: linear-gradient(0deg, rgba(211, 192, 214, 1) 0%, rgba(134, 160, 187, 1) 100%);
 }
 
 .servicios__titulos {
@@ -451,8 +445,8 @@ input[type=number] {
     margin-left: 36%;
     margin-right: 36%;
     font-size: 50px;
-    background-color: rgb(79, 111, 150);
-    color: white;
+    background-color: #d3c0d6;
+    color: rgb(0, 0, 0);
     border-radius: 10px;
     font-size: 40px;
     font-weight: bold;
@@ -652,7 +646,6 @@ input[type=number] {
         display: flex;
         flex-direction: column;
         height: 300px;
-        background-color: rgb(24, 45, 65);
         color: white;
         padding: 20px;
         justify-content: space-evenly;
@@ -708,7 +701,7 @@ input[type=number] {
 
 @MEDIA screen and (max-width: 768px) {
     .mainform {
-        background-color: #4ed9cb;
+        background-color: rgb(240, 241, 245);
     }
 
     .imagenDeFondoForm {
@@ -718,7 +711,7 @@ input[type=number] {
     .fomularioYMapa {
         display: flex;
         flex-wrap: wrap;
-        width: 91%;
+        width: 90%;
         margin-left: 3%;
         padding-bottom: 3%;
         padding-top: 3%;
@@ -727,22 +720,18 @@ input[type=number] {
 
     .formulario {
         width: 67%;
-        background-color: #00000000;
+        background-color: rgb(134, 160, 187);
     }
 
     .mapa {
         margin-left: 0%;
         margin-top: 3%;
-        background-color: #00000000;
+        background-color: rgb(134, 160, 187);
     }
 }
 
 /* TAMAÑO CELULAR CONTACTO */
 @media screen and (max-width: 480px) {
-    .mainform {
-        background-color: #4ed9cb;
-    }
-
     .formularioYMapa {
         display: flex;
         flex-direction: column;
@@ -756,9 +745,16 @@ input[type=number] {
         align-items: stretch;
     }
 
+    .tituloDelForm {
+        width: 100%;
+        text-align: center;
+    }
+
     .formulario {
-        margin: 0%;
-        padding: 0%;
+        margin-left: 1%;
+        margin-right: 1%;
+        padding-right: 5%;
+        padding-bottom: 7%;
         width: 100%;
         height: 500px;
         display: flex;
@@ -766,7 +762,7 @@ input[type=number] {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        background-color: #00000000;
+        background-color: rgb(134, 160, 187);
     }
 
     .formulario__nombre {
@@ -800,7 +796,9 @@ input[type=number] {
 
     .mapa {
         width: 100%;
-        background-color: #00000000;
+        background-color: rgb(134, 160, 187);
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
     .mapaGoogle {
@@ -811,7 +809,7 @@ input[type=number] {
 /* TAMAÑO TABLET SOPORTE TECNICO */
 @media screen and (max-width: 780px) {
     .mainSoporte {
-        background-color: #4ed9cb;
+        background-color: rgb(50, 53, 58);
         padding-top: 2%;
         padding-bottom: 2%;
     }
