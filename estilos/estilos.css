@@ -11,6 +11,9 @@ body {
 }
 
 /* NAV */
+.logoDelMenu img {
+    width: 250px;
+}
 
 header {
     background-color: rgb(42, 75, 106);
@@ -121,7 +124,7 @@ header {
     transition: all 0.2s ease;
 }
 
-.fondoDegradado {
+.fondoLogos {
     padding: 12PX;
     border-radius: 5px;
     background: rgb(134, 160, 187);
@@ -129,7 +132,7 @@ header {
     height: 276px;
 }
 
-.fondoDegradado:hover {
+.fondoLogos:hover {
     box-shadow: 0 20px 50px rgb(134, 160, 187);
     transition: all 0.2s ease;
 }
@@ -214,8 +217,8 @@ header {
     margin-right: 3%;
     margin-top: 15px;
     margin-bottom: 15px;
-    background: rgb(211, 192, 214);
-    background: linear-gradient(0deg, rgba(211, 192, 214, 1) 0%, rgba(134, 160, 187, 1) 100%);    text-align: center;
+    background: rgb(134, 160, 187);
+    text-align: center;
     border-radius: 10px;
     color: #ffffff;
     font-weight: bold;
@@ -403,11 +406,6 @@ input[type=number] {
     color: white;
 }
 
-.imgsoporte {
-    width: 100%;
-    display: block;
-}
-
 /* SERVICIOS */
 
 .mainServicios {
@@ -422,8 +420,7 @@ input[type=number] {
     margin-top: 40px;
     padding: 15px 40px;
     border-radius: 10px;
-    background: rgb(211, 192, 214);
-    background: linear-gradient(0deg, rgba(211, 192, 214, 1) 0%, rgba(134, 160, 187, 1) 100%);
+    background: rgb(134, 160, 187);
 }
 
 .servicios__titulos {
@@ -441,7 +438,7 @@ input[type=number] {
     margin-left: 36%;
     margin-right: 36%;
     font-size: 50px;
-    background-color: #d3c0d6;
+    background-color: rgb(134, 160, 187);
     color: rgb(0, 0, 0);
     border-radius: 10px;
     font-size: 40px;
@@ -625,7 +622,7 @@ input[type=number] {
         width: 200px;
     }
 
-    .fondoDegradado {
+    .fondoLogos {
         height: 170px;
     }
 
@@ -805,13 +802,9 @@ input[type=number] {
 /* TAMAÑO TABLET SOPORTE TECNICO */
 @media screen and (max-width: 780px) {
     .mainSoporte {
-        background-color: rgb(50, 53, 58);
+        background-color: rgb(134, 160, 187);
         padding-top: 2%;
         padding-bottom: 2%;
-    }
-
-    .imgsoporte {
-        display: none;
     }
 
     .formularioSoporte {
