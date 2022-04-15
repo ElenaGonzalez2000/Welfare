@@ -1,0 +1,138 @@
+@import "variables";
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.header {
+    background-color: $colorPrincipal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+    font-weight: bold;
+    font-family: $fuentePrincipal;
+
+    .logoDelMenu img {
+        width: 250px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    li a {
+        text-decoration: none;
+        margin-right: 7px;
+        margin-left: 7px;
+        color: $colorSecundario;
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+.mainIndex {
+    font-family: $fuentePrincipal;
+
+    .fotoYTexto {
+        .foto {
+            width: 100%;
+        }
+
+        .tituloPrincipal {
+            font-size: 100px;
+            width: 700px;
+            position: absolute;
+            top: 170px;
+            right: 64px;
+            line-height: 100%;
+            text-align: end;
+            color: rgba(0, 0, 0, 0.685);
+            font-weight: 500;
+        }
+
+        .textoDelTitulo {
+            font-size: 37px;
+            position: absolute;
+            top: 380px;
+            right: 70px;
+            text-align: end;
+            font-weight: 500;
+            color: rgb(26, 24, 24);
+        }
+    }
+
+    .textoDeLosLogos {
+        font-size: 45px;
+        text-align: center;
+        padding: 15px;
+        margin-top: 52px;
+        font-weight: bold;
+        color: $colorPrincipal;
+    }
+
+    .serviciosIndex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+
+        .serviciosIndex__logos {
+            width: 200px;
+        }
+
+        .serviciosIndex__texto {
+            font-size: 25px;
+            width: 200px;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #000000c9;
+        }
+
+        .fondoLogos {
+            padding: 12PX;
+            border-radius: 5px;
+            background: rgb(134, 160, 187);
+            width: 200px;
+            height: 276px;
+            &:hover {
+                box-shadow: 0 20px 50px rgb(134, 160, 187);
+                transition: all 0.2s ease;
+            }
+        }
+    }
+
+    .botonDos {
+        display: flex;
+        text-align: center;
+        font-size: 35px;
+        color: $colorPrincipal;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
+
+.footer {
+    font-family: $fuentePrincipal;
+    display: flex;
+    background-color: $colorPrincipal;
+    color: $colorSecundario;
+    padding: 20px;
+    justify-content: space-evenly;
+
+    .formFooter__form {
+        outline: none;
+    }
+}

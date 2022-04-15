@@ -1,0 +1,102 @@
+* {
+  margin: 0%;
+  padding: 0%; }
+
+.header {
+  background-color: #2a4b6a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 50px;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif; }
+  .header .logoDelMenu img {
+    width: 250px; }
+  .header ul {
+    display: flex;
+    align-items: center;
+    list-style: none; }
+  .header li a {
+    text-decoration: none;
+    margin-right: 7px;
+    margin-left: 7px;
+    color: #dedfe0; }
+    .header li a:hover {
+      color: black; }
+
+.mainIndex {
+  font-family: "Quicksand", sans-serif; }
+  .mainIndex .fotoYTexto .foto {
+    width: 100%; }
+  .mainIndex .fotoYTexto .tituloPrincipal {
+    font-size: 100px;
+    width: 700px;
+    position: absolute;
+    top: 170px;
+    right: 64px;
+    line-height: 100%;
+    text-align: end;
+    color: rgba(0, 0, 0, 0.685);
+    font-weight: 500; }
+  .mainIndex .fotoYTexto .textoDelTitulo {
+    font-size: 37px;
+    position: absolute;
+    top: 380px;
+    right: 70px;
+    text-align: end;
+    font-weight: 500;
+    color: #1a1818; }
+  .mainIndex .textoDeLosLogos {
+    font-size: 45px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 52px;
+    font-weight: bold;
+    color: #2a4b6a; }
+  .mainIndex .serviciosIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center; }
+    .mainIndex .serviciosIndex .serviciosIndex__logos {
+      width: 200px; }
+    .mainIndex .serviciosIndex .serviciosIndex__texto {
+      font-size: 25px;
+      width: 200px;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #000000c9; }
+    .mainIndex .serviciosIndex .fondoLogos {
+      padding: 12PX;
+      border-radius: 5px;
+      background: #86a0bb;
+      width: 200px;
+      height: 276px; }
+      .mainIndex .serviciosIndex .fondoLogos:hover {
+        box-shadow: 0 20px 50px #86a0bb;
+        transition: all 0.2s ease; }
+  .mainIndex .botonDos {
+    display: flex;
+    text-align: center;
+    font-size: 35px;
+    color: #2a4b6a;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-decoration: none; }
+
+.footer {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  background-color: #2a4b6a;
+  color: #dedfe0;
+  padding: 20px;
+  justify-content: space-evenly; }
+  .footer .formFooter__form {
+    outline: none; }

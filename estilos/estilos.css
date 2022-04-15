@@ -75,9 +75,7 @@ header {
     color: rgb(42, 75, 106);
 }
 
-.serviciosIndex__logos {
-    width: 200px;
-}
+
 
 .serviciosIndex {
     display: flex;
