@@ -213,7 +213,8 @@ header {
     margin-top: 15px;
     margin-bottom: 15px;
     background: rgb(211, 192, 214);
-    background: linear-gradient(0deg, rgba(211, 192, 214, 1) 0%, rgba(134, 160, 187, 1) 100%);    text-align: center;
+    background: linear-gradient(0deg, rgba(211, 192, 214, 1) 0%, rgba(134, 160, 187, 1) 100%);
+    text-align: center;
     border-radius: 10px;
     color: #ffffff;
     font-weight: bold;
@@ -224,11 +225,6 @@ header {
 /* CONTACTO */
 
 /*FORMULARIO*/
-.imagenDeFondoForm {
-    width: 100%;
-    display: none;
-}
-
 .fomularioYMapa {
     display: flex;
     flex-wrap: wrap;
@@ -399,11 +395,6 @@ input[type=number] {
     margin-top: 2%;
     margin-bottom: 2%;
     color: white;
-}
-
-.imgsoporte {
-    width: 100%;
-    display: block;
 }
 
 /* SERVICIOS */
