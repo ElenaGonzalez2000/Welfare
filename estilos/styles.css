@@ -142,14 +142,16 @@
   margin: 0%;
   padding: 0%; }
 
+.fuente {
+  font-family: "Quicksand", sans-serif; }
+
 .header {
   background-color: #2a4b6a;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px 50px;
-  font-weight: bold;
-  font-family: "Quicksand", sans-serif; }
+  font-weight: bold; }
   .header .logoDelMenu img {
     width: 250px; }
   .header ul {
@@ -165,95 +167,92 @@
       color: #86a0bb; }
 
 .mainIndex {
-  font-family: "Quicksand", sans-serif;
   background-color: #dedfe0; }
-  .mainIndex .fotoYTexto {
+  .mainIndex .portadaIndex {
     min-height: 85vh;
     background: url(../imagenes/AdobeStock_263217475.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; }
-    .mainIndex .fotoYTexto .tituloPrincipal {
+    .mainIndex .portadaIndex .tituloPrincipal {
       text-align: end;
       font-size: 100px;
       padding-right: 50px;
       padding-top: 90px;
       font-weight: bold;
       color: #363636d8; }
-    .mainIndex .fotoYTexto .tituloPrincipalContinuacion {
+    .mainIndex .portadaIndex .tituloPrincipalContinuacion {
       text-align: end;
       font-size: 100px;
       padding-right: 50px;
       font-weight: bold;
       color: #363636d8; }
-    .mainIndex .fotoYTexto .textoDelTitulo {
+    .mainIndex .portadaIndex .esloganDelTitulo {
       font-size: 37px;
       text-align: end;
       font-weight: 500;
       color: #1a1818ea;
       padding-right: 50px;
       padding-top: 20px; }
-  .mainIndex .fondoIndex {
+  .mainIndex .muestraDeServiciosIndex {
     padding-top: 50px;
     background: url(../imagenes/fondo.jpeg);
     background-size: cover; }
-    .mainIndex .fondoIndex .textoDeLosLogos {
+    .mainIndex .muestraDeServiciosIndex .tituloDeLosLogos {
       font-size: 45px;
       text-align: center;
       padding: 15px;
       padding-bottom: 40px;
       font-weight: bold;
       color: #2a4b6a; }
-    .mainIndex .fondoIndex .serviciosIndex {
+    .mainIndex .muestraDeServiciosIndex .serviciosIndex {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       text-align: center; }
-      .mainIndex .fondoIndex .serviciosIndex .serviciosIndex__logos {
+      .mainIndex .muestraDeServiciosIndex .serviciosIndex .serviciosIndex__logos {
         width: 200px; }
-      .mainIndex .fondoIndex .serviciosIndex .serviciosIndex__texto {
+      .mainIndex .muestraDeServiciosIndex .serviciosIndex .serviciosIndex__texto {
         font-size: 25px;
         width: 200px;
         margin-top: 10px;
         font-weight: bold;
         color: #000000c9; }
-      .mainIndex .fondoIndex .serviciosIndex .fondoLogos {
+      .mainIndex .muestraDeServiciosIndex .serviciosIndex .fondoLogos {
         padding: 12PX;
         border-radius: 5px;
         background: #86a0bb;
         width: 200px;
         height: 276px; }
-        .mainIndex .fondoIndex .serviciosIndex .fondoLogos:hover {
+        .mainIndex .muestraDeServiciosIndex .serviciosIndex .fondoLogos:hover {
           box-shadow: 0 20px 50px #86a0bb;
           transition: all 0.2s ease;
           transform: scale(1.1); }
-    .mainIndex .fondoIndex .botonDeContacto {
+    .mainIndex .muestraDeServiciosIndex .botonDeContacto {
       display: flex;
       flex-direction: row;
       justify-content: center;
       margin-top: 60px;
       padding-bottom: 50px; }
-      .mainIndex .fondoIndex .botonDeContacto .botonIndex {
+      .mainIndex .muestraDeServiciosIndex .botonDeContacto .botonIndex {
         border: none;
         padding: 10px;
         border-radius: 10px;
         background-color: #dedfe0;
         transition: 0.3s; }
-        .mainIndex .fondoIndex .botonDeContacto .botonIndex:hover {
+        .mainIndex .muestraDeServiciosIndex .botonDeContacto .botonIndex:hover {
           background-color: #2a4b6a; }
-        .mainIndex .fondoIndex .botonDeContacto .botonIndex a {
-          font-family: "Quicksand", sans-serif;
+        .mainIndex .muestraDeServiciosIndex .botonDeContacto .botonIndex a {
           color: #2a4b6a;
           font-size: 35px;
           font-weight: bold;
           text-decoration: none;
           list-style: none;
           text-align: center; }
-          .mainIndex .fondoIndex .botonDeContacto .botonIndex a:hover {
+          .mainIndex .muestraDeServiciosIndex .botonDeContacto .botonIndex a:hover {
             color: #dedfe0; }
 
 .footer {
-  font-family: "Quicksand", sans-serif;
   display: flex;
   background-color: #2a4b6a;
   color: #dedfe0;
@@ -269,7 +268,6 @@
     border-radius: 3px; }
   .footer .formFooter__btn {
     padding: 5px;
-    font-family: "Quicksand", sans-serif;
     border-radius: 3px;
     border: none;
     color: #2a4b6a;
@@ -287,7 +285,6 @@
   background-color: #dedfe0; }
   .bodyNosotros .mainNosotros {
     display: flex;
-    font-family: "Quicksand", sans-serif;
     width: 90%;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -320,8 +317,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #dedfe0;
-  font-family: "Quicksand", sans-serif; }
+  background-color: #dedfe0; }
   .bodySoporte .mainSoporte {
     display: flex;
     padding-bottom: 1%;
@@ -344,7 +340,6 @@
       .bodySoporte .mainSoporte .formularioSoporte input[type=number] {
         -moz-appearance: textfield; }
       .bodySoporte .mainSoporte .formularioSoporte ::placeholder {
-        font-family: 'Quicksand', sans-serif;
         font-weight: bold; }
       .bodySoporte .mainSoporte .formularioSoporte .tituloSoporte {
         font-size: 30px; }
@@ -377,7 +372,6 @@
         margin-top: 10px;
         color: #807f7f;
         outline: none;
-        font-family: "Quicksand", sans-serif;
         font-weight: bold; }
       .bodySoporte .mainSoporte .formularioSoporte .formulario__cel {
         width: 47%;
@@ -419,7 +413,6 @@
         background-color: rgba(44, 43, 43, 0.904);
         font-size: 17px;
         font-weight: bold;
-        font-family: 'Quicksand', sans-serif;
         letter-spacing: 1px; }
         .bodySoporte .mainSoporte .formularioSoporte .formulario__boton:hover {
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.87);
