@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .bodyContacto {
   background-image: url(../imagenes/fondo.jpeg);
   background-position: center center;
@@ -162,6 +163,31 @@
         margin-left: 7px;
         color: #dedfe0 !important; }
 
+.footer {
+  display: flex;
+  background-color: #2a4b6a;
+  color: #dedfe0;
+  padding: 20px;
+  justify-content: space-evenly; }
+  .footer .formFooter__titulo {
+    padding-bottom: 3px;
+    font-weight: bold; }
+  .footer .formFooter__form {
+    outline: none;
+    padding: 5px;
+    border: none;
+    border-radius: 3px; }
+  .footer .formFooter__btn {
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+    color: #2a4b6a;
+    background-color: rgba(255, 255, 255, 0.89);
+    font-weight: bold; }
+    .footer .formFooter__btn:hover {
+      color: black; }
+
+/*boton para ir a pagina "contacto"*/
 .botonDeContacto {
   display: flex;
   flex-direction: row;
@@ -173,7 +199,7 @@
     padding: 10px;
     border-radius: 10px;
     background-color: #dedfe0;
-    transition: 0.3s;
+    transition: 0.1s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.87); }
     .botonDeContacto .botonIndex:hover {
       background-color: #2a4b6a; }
@@ -253,31 +279,6 @@
           box-shadow: 0 20px 50px #86a0bb;
           transition: all 0.2s ease;
           transform: scale(1.1); }
-
-/*footer*/
-.footer {
-  display: flex;
-  background-color: #2a4b6a;
-  color: #dedfe0;
-  padding: 20px;
-  justify-content: space-evenly; }
-  .footer .formFooter__titulo {
-    padding-bottom: 3px;
-    font-weight: bold; }
-  .footer .formFooter__form {
-    outline: none;
-    padding: 5px;
-    border: none;
-    border-radius: 3px; }
-  .footer .formFooter__btn {
-    padding: 5px;
-    border-radius: 3px;
-    border: none;
-    color: #2a4b6a;
-    background-color: rgba(255, 255, 255, 0.89);
-    font-weight: bold; }
-    .footer .formFooter__btn:hover {
-      color: black; }
 
 /*pagina nosotros*/
 .bodyNosotros {
@@ -471,6 +472,7 @@
         color: #dedfe0;
         font-weight: bold; }
 
+/*tamaño celular index*/
 @media only screen and (max-width: 480px) {
   .mainIndex .portadaIndex .tituloPrincipal {
     font-size: 50px;
@@ -490,13 +492,19 @@
     flex-direction: column;
     align-items: center; }
     .mainIndex .muestraDeServiciosIndex .serviciosIndex .fondoLogos {
-      background-color: transparent; } }
+      background-color: transparent; }
+      .mainIndex .muestraDeServiciosIndex .serviciosIndex .fondoLogos:hover {
+        box-shadow: none;
+        transition: none;
+        transform: none; } }
 
+/*tamaño celular servicios*/
 @media only screen and (max-width: 480px) {
   .bodyServicios .mainServicios .cajaServicios {
     padding: 30px;
     margin-top: 50px; } }
 
+/*tamaño celular nosotros*/
 @media only screen and (max-width: 480px) {
   .bodyNosotros .mainNosotros {
     margin-top: 15px;
@@ -507,6 +515,7 @@
       font-size: 40px;
       width: 200px; } }
 
+/*tamaño celular contacto*/
 @media only screen and (max-width: 480px) {
   .bodyContacto .formularioYMapa {
     width: 100%;
@@ -528,6 +537,7 @@
       .bodyContacto .formularioYMapa .cajaLogosContacto .logosContacto {
         margin-left: 0px; } }
 
+/*tamaño celular soporte*/
 @media only screen and (max-width: 480px) {
   .bodySoporte .mainSoporte .formularioSoporte {
     width: 95%;
@@ -557,3 +567,8 @@
         margin-bottom: 20px;
         margin-right: 0px;
         margin-left: 0px; } }
+
+/*boton para ir a pagina "contacto"*/
+@media only screen and (max-width: 480px) {
+  .botonDeContacto .botonIndex a {
+    font-size: 20px; } }

@@ -1,15 +1,12 @@
 @import "variables";
 @import "contacto";
-
 * {
     margin: 0%;
     padding: 0%;
 }
-
 .fuente {
     font-family: $fuentePrincipal;
 }
-
 .header {
     font-weight: bold;
 
@@ -35,7 +32,39 @@
         }
     }
 }
+.footer {
+    display: flex;
+    background-color: $colorPrincipal;
+    color: $colorBlanco;
+    padding: 20px;
+    justify-content: space-evenly;
 
+    .formFooter__titulo {
+        padding-bottom: 3px;
+        font-weight: bold;
+    }
+
+    .formFooter__form {
+        outline: none;
+        padding: 5px;
+        border: none;
+        border-radius: 3px;
+    }
+
+    .formFooter__btn {
+        padding: 5px;
+        border-radius: 3px;
+        border: none;
+        color: $colorPrincipal;
+        background-color: rgba(255, 255, 255, 0.89);
+        font-weight: bold;
+
+        &:hover {
+            color: black;
+        }
+    }
+}
+/*boton para ir a pagina "contacto"*/
 .botonDeContacto {
     display: flex;
     flex-direction: row;
@@ -48,7 +77,7 @@
         padding: 10px;
         border-radius: 10px;
         background-color: $colorBlanco;
-        transition: 0.3s;
+        transition: 0.1s;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.87);
 
         &:hover {
@@ -69,7 +98,6 @@
         }
     }
 }
-
 /*contenido del index*/
 .mainIndex {
     background-color: $colorBlanco;
@@ -159,42 +187,6 @@
         }
     }
 }
-
-/*footer*/
-.footer {
-    display: flex;
-    background-color: $colorPrincipal;
-    color: $colorBlanco;
-    padding: 20px;
-    justify-content: space-evenly;
-
-    .formFooter__titulo {
-        padding-bottom: 3px;
-        font-weight: bold;
-    }
-
-    .formFooter__form {
-        outline: none;
-        padding: 5px;
-        border: none;
-        border-radius: 3px;
-    }
-
-    .formFooter__btn {
-        padding: 5px;
-        border-radius: 3px;
-        border: none;
-        color: $colorPrincipal;
-        background-color: rgba(255, 255, 255, 0.89);
-        font-weight: bold;
-
-        &:hover {
-            color: black;
-        }
-    }
-}
-
-
 /*pagina nosotros*/
 .bodyNosotros {
     background-image: url(../imagenes/fondo.jpeg);
@@ -232,7 +224,6 @@
         }
     }
 }
-
 /*pagina soporte*/
 .bodySoporte {
     background-image: url(../imagenes/fondo.jpeg);
@@ -418,7 +409,6 @@
 
     }
 }
-
 /*pagina servicios*/
 .bodyServicios {
     background-image: url(../imagenes/fondo.jpeg);
@@ -454,7 +444,7 @@
         }
     }
 }
-
+/*tamaño celular index*/
 @media only screen and (max-width: 480px) {
     .mainIndex {
         .portadaIndex {
@@ -488,12 +478,17 @@
 
                 .fondoLogos {
                     background-color: transparent;
+                    &:hover {
+                        box-shadow: none;
+                        transition: none;
+                        transform: none;
+                    }
                 }
             }
         }
     }
 }
-
+/*tamaño celular servicios*/
 @media only screen and (max-width: 480px) {
     .bodyServicios {
         .mainServicios {
@@ -504,7 +499,7 @@
         }
     }
 }
-
+/*tamaño celular nosotros*/
 @media only screen and (max-width: 480px) {
     .bodyNosotros {
         .mainNosotros {
@@ -528,9 +523,7 @@
         }
     }
 }
-
-
-
+/*tamaño celular contacto*/
 @media only screen and (max-width: 480px) {
     .bodyContacto {
         .formularioYMapa {
@@ -565,7 +558,7 @@
         }
     }
 }
-
+/*tamaño celular soporte*/
 @media only screen and (max-width: 480px) {
 
     .bodySoporte {
@@ -609,6 +602,16 @@
                 }
             }
 
+        }
+    }
+}
+/*boton para ir a pagina "contacto"*/
+@media only screen and (max-width: 480px) {
+    .botonDeContacto{
+        .botonIndex{
+            a{
+                font-size: 20px;
+            }
         }
     }
 }
