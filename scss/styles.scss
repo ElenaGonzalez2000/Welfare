@@ -571,27 +571,41 @@
     .bodySoporte {
         .mainSoporte {
             .formularioSoporte {
-                width: 100%;
+                width: 95%;
                 padding: 10px;
-                margin-left: 0px;
+                margin-left: 10px;
                 opacity: 0.8;
+                .formulario__pais{
+                    margin-left: 0px;
+                }
+                .formulario__email{
+                    margin-left: 0px;
+                }
             }
 
             .redesSoporte {
                 margin-left: 0px;
                 margin-top: 25px;
-                display: grid;
-                grid-template-columns: 450px;
-                grid-template-rows: 100px 150px;
+                display: flex;
+                flex-wrap: wrap;
 
                 .textoSoporte {
-                    width: 400px;
+                    height: 130px;
                     font-size: 25px;
                     font-weight: bold;
                 }
 
                 .redesSoporteLinks {
                     width: 450px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    .redesSoporteLinks__logos{
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        margin-right: 0px;
+                        margin-left: 0px;
+                    }
                 }
             }
 
