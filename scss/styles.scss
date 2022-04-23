@@ -6,73 +6,107 @@
     padding: 0%;
 }
 
-.fuente{
+.fuente {
     font-family: $fuentePrincipal;
 }
 
 .header {
-    background-color: $colorPrincipal;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 50px;
     font-weight: bold;
-    .logoDelMenu img {
-        width: 250px;
-    }
 
-    ul {
-        display: flex;
-        align-items: center;
-        list-style: none;
-    }
+    nav {
+        background-color: $colorPrincipal !important;
 
-    li a {
-        text-decoration: none;
-        margin-right: 7px;
-        margin-left: 7px;
-        color: $colorBlanco;
+        div {
+            div {
 
-        &:hover {
-            color: #86a0bb;
+                display: flex;
+                justify-content: end;
+
+                ul {
+                    li {
+                        a {
+                            margin-right: 7px;
+                            margin-left: 7px;
+                            color: $colorBlanco !important;
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
+.botonDeContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .botonIndex {
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: $colorBlanco;
+        transition: 0.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.87);
+
+        &:hover {
+            background-color: $colorPrincipal;
+        }
+
+        a {
+            color: $colorPrincipal;
+            font-size: 35px;
+            font-weight: bold;
+            text-decoration: none;
+            list-style: none;
+            text-align: center;
+
+            &:hover {
+                color: $colorBlanco;
+            }
+        }
+    }
+}
+
+/*contenido del index*/
 .mainIndex {
     background-color: $colorBlanco;
 
     .portadaIndex {
-        min-height: 85vh;
         background: url(../imagenes/AdobeStock_263217475.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+        display: flex;
+        flex-direction: column;
 
         .tituloPrincipal {
             text-align: end;
             font-size: 100px;
             padding-right: 50px;
-            padding-top: 90px;
-            font-weight: bold;
+            padding-top: 60px;
             color: $colorGris;
+            height: 200px;
         }
 
         .tituloPrincipalContinuacion {
             text-align: end;
             font-size: 100px;
             padding-right: 50px;
-            font-weight: bold;
             color: $colorGris;
+            height: 150px;
         }
 
         .esloganDelTitulo {
-            font-size: 37px;
+            font-size: 35px;
             text-align: end;
-            font-weight: 500;
+            font-weight: bold;
             color: #1a1818ea;
             padding-right: 50px;
             padding-top: 20px;
+            height: 133px;
         }
     }
 
@@ -106,14 +140,15 @@
                 margin-top: 10px;
                 font-weight: bold;
                 color: #000000c9;
+                text-align: center;
             }
 
             .fondoLogos {
                 padding: 12PX;
                 border-radius: 5px;
                 background: rgb(134, 160, 187);
-                width: 200px;
-                height: 276px;
+                width: 230px;
+                height: 300px;
 
                 &:hover {
                     box-shadow: 0 20px 50px rgb(134, 160, 187);
@@ -122,42 +157,10 @@
                 }
             }
         }
-
-        .botonDeContacto {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin-top: 60px;
-            padding-bottom: 50px;
-
-            .botonIndex {
-                border: none;
-                padding: 10px;
-                border-radius: 10px;
-                background-color: $colorBlanco;
-                transition: 0.3s;
-
-                &:hover {
-                    background-color: $colorPrincipal;
-                }
-
-                a {
-                    color: $colorPrincipal;
-                    font-size: 35px;
-                    font-weight: bold;
-                    text-decoration: none;
-                    list-style: none;
-                    text-align: center;
-
-                    &:hover {
-                        color: $colorBlanco;
-                    }
-                }
-            }
-        }
     }
 }
 
+/*footer*/
 .footer {
     display: flex;
     background-color: $colorPrincipal;
@@ -191,6 +194,8 @@
     }
 }
 
+
+/*pagina nosotros*/
 .bodyNosotros {
     background-image: url(../imagenes/fondo.jpeg);
     background-position: center center;
@@ -200,45 +205,35 @@
     background-color: $colorBlanco;
 
     .mainNosotros {
-        display: flex;
-        width: 90%;
         margin-top: 30px;
         margin-bottom: 30px;
-        margin-left: 100px;
-
-        .fotoNosotros {
-            width: 40%;
-        }
 
         .nosotrosContenido {
-            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
 
-            .nosotrosTitulo {
-                font-size: 60px;
-                padding-left: 30px;
-                padding-top: 25px;
-                font-weight: bold;
-            }
-
-            .nosotrosSubTitulos {
-                padding-left: 30px;
-                font-size: 30px;
-                font-weight: bold;
-                color: $colorPrincipal;
-                padding-bottom: 5px;
+            .fotoNosotros {
+                width: 500px;
             }
 
             .nosotrosTexto {
-                font-size: 20px;
-                width: 600px;
-                padding-left: 30px;
-                padding-bottom: 30px;
-                padding-right: 30px;
+                font-size: 15px;
+                width: 500px;
+                padding-right: 20px;
+                font-weight: bold;
+
+                .nosotrosTitulo {
+                    color: $colorPrincipal;
+                    font-size: 60px;
+                    width: 300px;
+                    font-weight: bold;
+                }
             }
         }
     }
 }
 
+/*pagina soporte*/
 .bodySoporte {
     background-image: url(../imagenes/fondo.jpeg);
     background-position: center center;
@@ -280,16 +275,18 @@
 
             .tituloSoporte {
                 font-size: 30px;
+                margin-left: 4px;
             }
 
             .subTituloSoporte {
                 font-size: 17px;
                 font-weight: bold;
                 padding-bottom: 5px;
+                margin-left: 4px;
             }
 
             .formulario__nombre {
-                width: 47%;
+                width: 48%;
                 height: 40px;
                 border-radius: 5px;
                 border-style: none;
@@ -299,7 +296,7 @@
             }
 
             .formulario__apellido {
-                width: 47%;
+                width: 48%;
                 height: 40px;
                 border-radius: 5px;
                 border-style: none;
@@ -309,19 +306,20 @@
             }
 
             .formulario__pais {
-                width: 48.4%;
+                width: 48%;
                 height: 40px;
                 border-radius: 5px;
                 border-style: none;
                 padding-left: 8px;
                 margin-top: 10px;
+                margin-left: 4px;
                 color: rgb(128, 127, 127);
                 outline: none;
                 font-weight: bold;
             }
 
             .formulario__cel {
-                width: 47%;
+                width: 48.1%;
                 height: 40px;
                 border-radius: 5px;
                 border-style: none;
@@ -332,24 +330,26 @@
             }
 
             .formulario__email {
-                width: 96%;
+                width: 97.5%;
                 height: 40px;
                 border-radius: 5px;
                 border-style: none;
                 padding-left: 10px;
                 margin-top: 10px;
+                margin-left: 4px;
                 color: rgb(128, 127, 127);
                 outline: none;
             }
 
             .formulario__consulta {
-                width: 96%;
+                width: 97.5%;
                 height: 100px;
                 border-radius: 5px;
                 border-style: none;
                 padding-left: 10px;
                 padding-top: 10px;
                 margin-top: 10px;
+                margin-left: 4px;
                 color: rgb(128, 127, 127);
                 outline: none;
             }
@@ -360,6 +360,7 @@
                 border-radius: 5px;
                 border-style: none;
                 padding-left: 10px;
+                margin-left: 4px;
                 margin-top: 5px;
                 margin-bottom: 5px;
                 color: rgb(255, 255, 255);
@@ -392,7 +393,6 @@
             grid-area: titulo;
             height: 100px;
             font-size: 30px;
-
         }
 
         .redesSoporteLinks {
@@ -416,5 +416,185 @@
             }
         }
 
+    }
+}
+
+/*pagina servicios*/
+.bodyServicios {
+    background-image: url(../imagenes/fondo.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: $colorBlanco;
+
+    .mainServicios {
+        display: flex;
+        justify-content: space-evenly;
+
+        .cajaServicios {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            margin-top: 85px;
+            background-color: $colorPrincipal;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.87);
+            opacity: 0.8;
+            transition: 0.5s;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            .cajaServicios__Textos {
+                color: $colorBlanco;
+                font-weight: bold;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .mainIndex {
+        .portadaIndex {
+            .tituloPrincipal {
+                font-size: 50px;
+                padding-right: 1px;
+                height: 100px;
+                padding-top: 40px;
+            }
+
+            .tituloPrincipalContinuacion {
+                font-size: 50px;
+                padding-right: 1px;
+                height: 100px;
+                padding-bottom: 0px;
+            }
+
+            .esloganDelTitulo {
+                display: none;
+            }
+        }
+
+        .muestraDeServiciosIndex {
+            .tituloDeLosLogos {
+                font-size: 35px;
+            }
+
+            .serviciosIndex {
+                flex-direction: column;
+                align-items: center;
+
+                .fondoLogos {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .bodyServicios {
+        .mainServicios {
+            .cajaServicios {
+                padding: 30px;
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .bodyNosotros {
+        .mainNosotros {
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            .nosotrosContenido {
+                div {
+                    .fotoNosotros {
+                        display: none;
+                    }
+                }
+
+                .nosotrosTexto {
+                    .nosotrosTitulo {
+                        font-size: 40px;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .bodyContacto {
+        .formularioYMapa {
+            width: 100%;
+            margin-left: 0%;
+
+            .formulario {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .mapa {
+                width: 100%;
+                margin-left: 0%;
+
+                .mapaGoogle {
+                    width: 100%;
+                }
+            }
+
+            .cajaLogosContacto {
+                display: flex;
+                width: 100%;
+                justify-content: space-evenly;
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+                .logosContacto {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .bodySoporte {
+        .mainSoporte {
+            .formularioSoporte {
+                width: 100%;
+                padding: 10px;
+                margin-left: 0px;
+                opacity: 0.8;
+            }
+
+            .redesSoporte {
+                margin-left: 0px;
+                margin-top: 25px;
+                display: grid;
+                grid-template-columns: 450px;
+                grid-template-rows: 100px 150px;
+
+                .textoSoporte {
+                    width: 400px;
+                    font-size: 25px;
+                    font-weight: bold;
+                }
+
+                .redesSoporteLinks {
+                    width: 450px;
+                }
+            }
+
+        }
     }
 }

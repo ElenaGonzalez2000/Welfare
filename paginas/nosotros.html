@@ -17,66 +17,85 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
-<body class="bodyNosotros fuente">
-    <header class="header">
-        <div class="logoDelMenu">
-            <a href="../index.html"><img src="../imagenes/logo-entero-welfare.png" alt="srcset=" logo de la
-                    empresa"></a>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="./servicios.html">Servicios</a>
-                    <a href="./nosotros.html">Nosotros</a>
-                    <a href="./contacto.html">Contacto</a>
-                    <a href="./soporte tecnico.html">Soporte Tecnico</a>
-                </li>
-            </ul>
+<body class="container-fluid bodyNosotros fuente">
+    <header class="header row fuente">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid navAjustes">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../imagenes/logo-entero-welfare.png" alt="Logo de la empresa" width="200">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse paginasDelMenu" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link CambioDeColoreNav" aria-current="page"
+                                href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./soporte tecnico.html">Soporte</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main class="mainNosotros">
-        <img src="../imagenes/fotoNosotros.jpeg" alt="" srcset="" class="fotoNosotros">
-        <div class="nosotrosContenido ">
-            <p class="nosotrosTitulo animate__animated animate__fadeIn animate__slow">Sobre Nosotros</p>
-            <p class="nosotrosSubTitulos animate__animated animate__fadeIn animate__slow">Conocé Welfare</p>
-            <div class="nosotrosTexto animate__animated animate__fadeIn animate__slow">
+    <main class="mainNosotros row">
+        <div class="nosotrosContenido row">
+            <div class="col-lg-5 col-md-5 ">
+                <img src="../imagenes/fotoNosotros.jpeg" alt="" srcset="" class="fotoNosotros">
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 nosotrosTexto animate__animated animate__fadeIn animate__slow">
+                <h1 class="nosotrosTitulo animate__animated animate__fadeIn animate__slow">Sobre Nosotros</h1>
                 <p>Somos un equipo de profesionales con más de 15 años de experiencia en tratamientos de belleza.
                     Nuestra misión es brindarles a nuestros clientes la más alta calidad de servicio tanto a nivel
-                    profesional como humano, utilizando siempre la última y mejor tecnología del mercado, acompañándolos
-                    y
-                    asesorándolos en todo el proceso con el más alto nivel de personalizacion y atención, desde el
+                    profesional como humano, utilizando siempre la última y mejor tecnología del mercado,
+                    acompañándolos
+                    y asesorándolos en todo el proceso con el más alto nivel de personalizacion y atención, desde el
                     inicio de
                     la consulta hasta finalizado el tratamiento acompañado de la calidez humana de nuestros
                     profesionales.</p>
                 <p>Tu salud, bienestar y belleza en manos de expertos profesionales, en nuestro centro estético en
                     Palermo,
                     C.A.B.A</p>
-                <p>Ofrecemos descuentos especiales en determinadas temporadas del año. Si bien el verano es la gran meta
-                    que muchas mujeres y muchos hombres se fijan para lucir sus cuerpos, te proponemos comenzar a cuidar
+                <p>Ofrecemos descuentos especiales en determinadas temporadas del año. Si bien el verano es la gran
+                    meta
+                    que muchas mujeres y muchos hombres se fijan para lucir sus cuerpos, te proponemos comenzar a
+                    cuidar
                     tu
-                    aspecto exterior y salud en este momento, sin esperar la llegada de una estación en particular.</p>
+                    aspecto exterior y salud en este momento, sin esperar la llegada de una estación en particular.
+                </p>
             </div>
+
         </div>
     </main>
-    <footer class="footer">
-        <div class="footerDireccion">
+    <footer class="footer row">
+        <div class="footerDireccion col-lg-2 col-md-2 col-sm-3">
             <p><b>Welfare</b></p>
             <p>Sarmiento 1234</p>
             <p>CABA, Buenos Aires</p>
         </div>
-        <div class="footerDatos">
+        <div class="footerDatos col-lg-3 col-md-3 col-sm-4">
             <p>tel 011 1234567</p>
             <p>cel 011 15 12345678</p>
             <p>email welfare@gmail.com</p>
         </div>
-        <div class="footerRedes">
+        <div class="footerRedes col-lg-2 col-md-2 col-sm-3">
             <p>Facebook</p>
             <p>Instragram</p>
             <p>YouTube</p>
         </div>
-        <div class="formFooter">
+        <div class="formFooter col-lg-4 col-md-4 col-sm-11">
             <form action="">
-                <p class="formFooter__titulo">Deje su mail para resivir ofertas:</p>
+                <p class="formFooter__titulo">Deje su mail para recibir ofertas:</p>
                 <label for="e-mail"></label>
                 <input type="email" name="e-mail" id="" placeholder="Ingrese su e-mail" class="formFooter__form">
                 <input type="submit" value="Enviar" class="formFooter__btn">
