@@ -78,9 +78,7 @@ header {
     color: rgb(42, 75, 106);
 }
 
-.serviciosIndex__logos {
-    width: 200px;
-}
+
 
 .serviciosIndex {
     display: flex;
@@ -217,7 +215,8 @@ header {
     margin-right: 3%;
     margin-top: 15px;
     margin-bottom: 15px;
-    background: rgb(134, 160, 187);
+    background: rgb(211, 192, 214);
+    background: linear-gradient(0deg, rgba(211, 192, 214, 1) 0%, rgba(134, 160, 187, 1) 100%);
     text-align: center;
     border-radius: 10px;
     color: #ffffff;
@@ -229,11 +228,6 @@ header {
 /* CONTACTO */
 
 /*FORMULARIO*/
-.imagenDeFondoForm {
-    width: 100%;
-    display: none;
-}
-
 .fomularioYMapa {
     display: flex;
     flex-wrap: wrap;
