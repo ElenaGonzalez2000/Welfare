@@ -187,33 +187,39 @@
     .footer .formFooter__btn:hover {
       color: black; }
 
-/*boton para ir a pagina "contacto"*/
+/* EXTEND */
+/*boton para ir a pagina "contacto" aplicado en el index y en la pagina servicios*/
 .botonDeContacto {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-top: 50px;
-  padding-bottom: 50px; }
-  .botonDeContacto .botonIndex {
+  padding-bottom: 50px;
+  /* EXTEND */ }
+  .botonDeContacto .botonContacto, .botonDeContacto .botonContacto--Servicios {
     border: none;
     padding: 10px;
     border-radius: 10px;
     background-color: #dedfe0;
     transition: 0.1s;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.87); }
-    .botonDeContacto .botonIndex:hover {
+    .botonDeContacto .botonContacto:hover, .botonDeContacto .botonContacto--Servicios:hover {
       background-color: #2a4b6a; }
-    .botonDeContacto .botonIndex a {
+    .botonDeContacto .botonContacto a, .botonDeContacto .botonContacto--Servicios a {
       color: #2a4b6a;
       font-size: 35px;
       font-weight: bold;
       text-decoration: none;
       list-style: none;
       text-align: center; }
-      .botonDeContacto .botonIndex a:hover {
+      .botonDeContacto .botonContacto a:hover, .botonDeContacto .botonContacto--Servicios a:hover {
         color: #dedfe0; }
+  .botonDeContacto .botonContacto--Servicios {
+    background-color: #363636d8; }
+    .botonDeContacto .botonContacto--Servicios a {
+      color: #dedfe0; }
 
-/*contenido del index*/
+/* MIXIN*/
 .mainIndex {
   background-color: #dedfe0; }
   .mainIndex .portadaIndex {
@@ -259,7 +265,16 @@
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-      text-align: center; }
+      text-align: center;
+      /*.serviciosIndex__texto {
+                font-size: 25px;
+                width: 200px;
+                margin-top: 10px;
+                font-weight: bold;
+                color: #000000c9;
+                text-align: center;
+            }*/
+      /* MIXIN */ }
       .mainIndex .muestraDeServiciosIndex .serviciosIndex .serviciosIndex__logos {
         width: 200px; }
       .mainIndex .muestraDeServiciosIndex .serviciosIndex .serviciosIndex__texto {
@@ -280,6 +295,7 @@
           transition: all 0.2s ease;
           transform: scale(1.1); }
 
+/* MAP GET */
 /*pagina nosotros*/
 .bodyNosotros {
   background-image: url(../imagenes/fondo.jpeg);
@@ -300,7 +316,15 @@
         font-size: 15px;
         width: 500px;
         padding-right: 20px;
-        font-weight: bold; }
+        font-weight: bold;
+        /* MAP GET */
+        /*
+                .nosotrosTitulo {
+                    color: $colorPrincipal;
+                    font-size: 60px;
+                    width: 300px;
+                    font-weight: bold;
+                }*/ }
         .bodyNosotros .mainNosotros .nosotrosContenido .nosotrosTexto .nosotrosTitulo {
           color: #2a4b6a;
           font-size: 60px;
@@ -446,6 +470,7 @@
       .bodySoporte .mainSoporte .redesSoporteLinks .logoCorreo {
         margin-left: 70px; }
 
+/* MAP */
 /*pagina servicios*/
 .bodyServicios {
   background-image: url(../imagenes/fondo.jpeg);
@@ -456,13 +481,20 @@
   background-color: #dedfe0; }
   .bodyServicios .mainServicios {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    /* MAP */ }
+    .bodyServicios .mainServicios .cajaServicios--primerCaja {
+      background-color: #272727d8; }
+    .bodyServicios .mainServicios .cajaServicios--segundaCaja {
+      background-color: #2a4b6a; }
+    .bodyServicios .mainServicios .cajaServicios--tercerCaja {
+      background-color: #86a0bb; }
     .bodyServicios .mainServicios .cajaServicios {
       display: flex;
       flex-wrap: wrap;
       padding: 10px;
       margin-top: 85px;
-      background-color: #2a4b6a;
+      /*background-color: $colorPrincipal;*/
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.87);
       opacity: 0.8;
       transition: 0.5s; }
