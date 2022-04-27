@@ -6,10 +6,12 @@
     padding: 0%;
 }
 
+/*fuente que uso en todo el sitio*/
 .fuente {
     font-family: $fuentePrincipal;
 }
 
+/*header/nav*/
 .header {
     font-weight: bold;
 
@@ -36,6 +38,7 @@
     }
 }
 
+/* footer */
 .footer {
     display: flex;
     background-color: $colorPrincipal;
@@ -43,20 +46,34 @@
     padding: 20px;
     justify-content: space-evenly;
 
+    .footerDatos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        a {
+            text-decoration: none;
+            color: $colorBlanco;
+
+            &:hover {
+                color: $colorCeleste;
+            }
+        }
+    }
+
     .formFooter__titulo {
-        padding-bottom: 3px;
         font-weight: bold;
     }
 
     .formFooter__form {
         outline: none;
-        padding: 5px;
+        padding: 4px;
         border: none;
         border-radius: 3px;
     }
 
     .formFooter__btn {
-        padding: 5px;
+        padding: 4px;
         border-radius: 3px;
         border: none;
         color: $colorPrincipal;
@@ -68,6 +85,7 @@
         }
     }
 }
+
 /*boton para ir a pagina "contacto" aplicado en el index y en la pagina servicios*/
 .botonDeContacto {
     display: flex;
@@ -102,9 +120,9 @@
         }
     }
 }
-.mainIndex {
-    background-color: $colorBlanco;
 
+/*pagina index*/
+.mainIndex {
     .portadaIndex {
         background: url(../imagenes/AdobeStock_263217475.jpeg);
         background-size: cover;
@@ -138,6 +156,7 @@
             padding-right: 50px;
             padding-top: 20px;
             height: 133px;
+            margin-bottom: 25px;
         }
     }
 
@@ -161,19 +180,6 @@
             justify-content: space-evenly;
             text-align: center;
 
-            .serviciosIndex__logos {
-                width: 200px;
-            }
-
-            .serviciosIndex__texto {
-                font-size: 25px;
-                width: 200px;
-                margin-top: 10px;
-                font-weight: bold;
-                color: #000000c9;
-                text-align: center;
-            }
-
             .fondoLogos {
                 padding: 12PX;
                 border-radius: 5px;
@@ -186,10 +192,24 @@
                     transition: all 0.2s ease;
                     transform: scale(1.1);
                 }
+
+                .serviciosIndex__logos {
+                    width: 200px;
+                }
+
+                .serviciosIndex__texto {
+                    font-size: 25px;
+                    width: 200px;
+                    margin-top: 10px;
+                    font-weight: bold;
+                    color: #000000c9;
+                    text-align: center;
+                }
             }
         }
     }
 }
+
 /*pagina nosotros*/
 .bodyNosotros {
     background-image: url(../imagenes/fondo.jpeg);
@@ -227,6 +247,7 @@
         }
     }
 }
+
 /*pagina soporte*/
 .bodySoporte {
     background-image: url(../imagenes/fondo.jpeg);
@@ -270,36 +291,30 @@
             .tituloSoporte {
                 font-size: 30px;
                 margin-left: 4px;
+                font-weight: bold;
             }
 
             .subTituloSoporte {
                 font-size: 17px;
                 font-weight: bold;
-                padding-bottom: 5px;
                 margin-left: 4px;
             }
 
-            .formulario__nombre {
+            .formulario__nombreSoporte {
                 width: 48%;
                 height: 40px;
                 border-radius: 5px;
                 border-style: none;
                 padding-left: 10px;
-                color: rgb(161, 154, 154);
+                color: $colorGrisClaro;
                 outline: none;
             }
 
-            .formulario__apellido {
-                width: 48%;
-                height: 40px;
-                border-radius: 5px;
-                border-style: none;
-                padding-left: 10px;
-                color: rgb(128, 127, 127);
-                outline: none;
+            .formulario__apellidoSoporte {
+                @extend .formulario__nombreSoporte;
             }
 
-            .formulario__pais {
+            .formulario__paisSoporte {
                 width: 48%;
                 height: 40px;
                 border-radius: 5px;
@@ -312,7 +327,7 @@
                 font-weight: bold;
             }
 
-            .formulario__cel {
+            .formulario__celSoporte {
                 width: 48.1%;
                 height: 40px;
                 border-radius: 5px;
@@ -323,7 +338,7 @@
                 outline: none;
             }
 
-            .formulario__email {
+            .formulario__emailSoporte {
                 width: 97.5%;
                 height: 40px;
                 border-radius: 5px;
@@ -335,7 +350,7 @@
                 outline: none;
             }
 
-            .formulario__consulta {
+            .formulario__consultaSoporte {
                 width: 97.5%;
                 height: 100px;
                 border-radius: 5px;
@@ -348,7 +363,7 @@
                 outline: none;
             }
 
-            .formulario__boton {
+            .formulario__botonSoporte {
                 width: 97.5%;
                 height: 40px;
                 border-radius: 5px;
@@ -381,37 +396,32 @@
                 "titulo"
                 " logos"
             ;
-        }
-
-        .textoSoporte {
-            grid-area: titulo;
-            height: 100px;
-            font-size: 30px;
-        }
-
-        .redesSoporteLinks {
-            grid-area: logos;
-
-            .redesSoporteLinks__logos {
-                margin-top: 50px;
-                margin-right: 50px;
-                width: 70px;
-                opacity: 0.8;
-
-                &:hover {
-                    opacity: 1;
-                    transition: all 0.2s ease;
-                    transform: scale(1.1);
+            .textoSoporte {
+                grid-area: titulo;
+                height: 100px;
+                font-size: 30px;
+            }
+            .redesSoporteLinks {
+                grid-area: logos;
+                .redesSoporteLinks__logos {
+                    margin-top: 50px;
+                    margin-right: 50px;
+                    width: 70px;
+                    opacity: 0.8;
+                    &:hover {
+                        opacity: 1;
+                        transition: all 0.2s ease;
+                        transform: scale(1.1);
+                    }
+                }
+                .logoCorreo {
+                    margin-left: 70px;
                 }
             }
-
-            .logoCorreo {
-                margin-left: 70px;
-            }
         }
-
     }
 }
+
 /*pagina servicios*/
 .bodyServicios {
     background-image: url(../imagenes/fondo.jpeg);
@@ -440,13 +450,14 @@
                 opacity: 1;
             }
 
-            .cajaServicios__Textos {
+            .cajaServicios__textos {
                 color: $colorBlanco;
                 font-weight: bold;
             }
         }
     }
 }
+
 /*tamaño celular index*/
 @media only screen and (max-width: 480px) {
     .mainIndex {
@@ -492,6 +503,7 @@
         }
     }
 }
+
 /*tamaño celular servicios*/
 @media only screen and (max-width: 480px) {
     .bodyServicios {
@@ -503,6 +515,7 @@
         }
     }
 }
+
 /*tamaño celular nosotros*/
 @media only screen and (max-width: 480px) {
     .bodyNosotros {
@@ -527,6 +540,7 @@
         }
     }
 }
+
 /*tamaño celular contacto*/
 @media only screen and (max-width: 480px) {
     .bodyContacto {
@@ -537,6 +551,18 @@
             .formulario {
                 width: 100%;
                 margin-bottom: 10px;
+                .formulario__cel{
+                    width: 47%;
+                }
+                .formulario__email{
+                    width: 96%;
+                }
+                .formulario__consulta{
+                    width: 96%;
+                }
+                .formulario__boton{
+                    width: 96%;
+                }
             }
 
             .mapa {
@@ -562,29 +588,41 @@
         }
     }
 }
+
 /*tamaño celular soporte*/
 @media only screen and (max-width: 480px) {
 
     .bodySoporte {
         .mainSoporte {
             .formularioSoporte {
-                width: 95%;
+                width: 94%;
                 padding: 10px;
                 margin-left: 10px;
                 opacity: 0.8;
 
-                .formulario__pais {
+                .formulario__paisSoporte{
                     margin-left: 0px;
                 }
 
-                .formulario__email {
+                .formulario__emailSoporte {
                     margin-left: 0px;
+                    width: 98%;
+                }
+
+                .formulario__consultaSoporte {
+                    width: 98%;
+                    margin-left: 0px;
+                }
+
+                .formulario__botonSoporte {
+                    width: 98.2%;
                 }
             }
 
             .redesSoporte {
-                margin-left: 0px;
+                width: 98.2%;
                 margin-top: 25px;
+                margin-left: 10px;
                 display: flex;
                 flex-wrap: wrap;
 
@@ -612,10 +650,11 @@
         }
     }
 }
-/*boton para ir a pagina "contacto"*/
+
+/*boton para ir a pagina "contacto" en tamaño celular*/
 @media only screen and (max-width: 480px) {
     .botonDeContacto {
-        .botonIndex {
+        .botonContacto {
             a {
                 font-size: 20px;
             }

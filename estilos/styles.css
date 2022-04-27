@@ -5,8 +5,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #dedfe0;
-  font-family: "Quicksand", sans-serif; }
+  background-color: #dedfe0; }
   .bodyContacto .formularioYMapa {
     display: flex;
     flex-wrap: wrap;
@@ -38,15 +37,7 @@
         padding-left: 1px;
         font-weight: bold;
         color: white; }
-      .bodyContacto .formularioYMapa .formulario .formulario__nombre {
-        width: 47%;
-        height: 40px;
-        border-radius: 5px;
-        border-style: none;
-        padding-left: 10px;
-        color: #a19a9a;
-        outline: none; }
-      .bodyContacto .formularioYMapa .formulario .formulario__apellido {
+      .bodyContacto .formularioYMapa .formulario .formulario__nombre, .bodyContacto .formularioYMapa .formulario .formulario__apellido, .bodyContacto .formularioYMapa .formulario .formulario__pais, .bodyContacto .formularioYMapa .formulario .formulario__cel, .bodyContacto .formularioYMapa .formulario .formulario__email, .bodyContacto .formularioYMapa .formulario .formulario__consulta, .bodyContacto .formularioYMapa .formulario .formulario__boton {
         width: 47%;
         height: 40px;
         border-radius: 5px;
@@ -56,52 +47,26 @@
         outline: none; }
       .bodyContacto .formularioYMapa .formulario .formulario__pais {
         width: 47.1%;
-        height: 40px;
-        border-radius: 5px;
-        border-style: none;
         padding-left: 8px;
         margin-top: 10px;
         margin-left: 4px;
-        color: #807f7f;
-        outline: none;
         font-family: "Quicksand", sans-serif;
         font-weight: bold; }
       .bodyContacto .formularioYMapa .formulario .formulario__cel {
         width: 46.9%;
-        height: 40px;
-        border-radius: 5px;
-        border-style: none;
-        padding-left: 10px;
-        margin-top: 10px;
-        color: #807f7f;
-        outline: none; }
+        margin-top: 10px; }
       .bodyContacto .formularioYMapa .formulario .formulario__email {
         width: 95.5%;
-        height: 40px;
-        border-radius: 5px;
-        border-style: none;
-        padding-left: 10px;
         margin-top: 10px;
-        margin-left: 4px;
-        color: #807f7f;
-        outline: none; }
+        margin-left: 4px; }
       .bodyContacto .formularioYMapa .formulario .formulario__consulta {
         width: 95.5%;
         height: 100px;
-        border-radius: 5px;
-        border-style: none;
-        padding-left: 10px;
         padding-top: 10px;
         margin-top: 10px;
-        margin-left: 4px;
-        color: #807f7f;
-        outline: none; }
+        margin-left: 4px; }
       .bodyContacto .formularioYMapa .formulario .formulario__boton {
         width: 95.5%;
-        height: 40px;
-        border-radius: 5px;
-        border-style: none;
-        padding-left: 10px;
         margin-top: 5px;
         margin-bottom: 5px;
         margin-left: 4px;
@@ -110,47 +75,48 @@
         font-size: 17px;
         font-weight: bold;
         font-family: 'Quicksand', sans-serif;
-        letter-spacing: 1px; }
+        letter-spacing: 1px;
+        opacity: 1; }
         .bodyContacto .formularioYMapa .formulario .formulario__boton:hover {
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.87);
           transition: all 0.2s ease;
           background-color: #181616; }
-  .bodyContacto .mapa {
-    margin-left: 30px;
-    background-color: #86a0bb;
-    padding: 10px;
-    border-radius: 10px;
-    opacity: 0.8; }
-    .bodyContacto .mapa .mapa__direccion {
-      font-size: 25px;
-      font-weight: bold;
-      color: white;
-      letter-spacing: 1px; }
-    .bodyContacto .mapa .mapa__ciudad {
-      font-size: 17px;
-      font-weight: bold;
-      color: white;
-      letter-spacing: 1px; }
-    .bodyContacto .mapa .mapaGoogle {
-      width: 375px; }
-  .bodyContacto .logosContacto {
-    display: flex;
-    margin-top: 9px;
-    margin-left: 25px;
-    width: 70px;
-    opacity: 0.7; }
-    .bodyContacto .logosContacto:hover {
-      opacity: 1;
-      transition: all 0.2s ease;
-      transform: scale(1.1); }
+    .bodyContacto .formularioYMapa .mapa {
+      margin-left: 30px;
+      background-color: #86a0bb;
+      padding: 10px;
+      border-radius: 10px;
+      opacity: 0.8; }
+      .bodyContacto .formularioYMapa .mapa .mapa__direccion, .bodyContacto .formularioYMapa .mapa .mapa__ciudad {
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 1px; }
+      .bodyContacto .formularioYMapa .mapa .mapa__ciudad {
+        font-size: 17px; }
+      .bodyContacto .formularioYMapa .mapa .mapaGoogle {
+        width: 375px;
+        height: 310px; }
+    .bodyContacto .formularioYMapa .cajaLogosContacto .logosContacto {
+      display: flex;
+      margin-top: 9px;
+      margin-left: 25px;
+      width: 70px;
+      opacity: 0.8; }
+      .bodyContacto .formularioYMapa .cajaLogosContacto .logosContacto:hover {
+        opacity: 1;
+        transition: all 0.2s ease;
+        transform: scale(1.1); }
 
 * {
   margin: 0%;
   padding: 0%; }
 
+/*fuente que uso en todo el sitio*/
 .fuente {
   font-family: "Quicksand", sans-serif; }
 
+/*header/nav*/
 .header {
   font-weight: bold; }
   .header nav {
@@ -163,22 +129,31 @@
         margin-left: 7px;
         color: #dedfe0 !important; }
 
+/* footer */
 .footer {
   display: flex;
   background-color: #2a4b6a;
   color: #dedfe0;
   padding: 20px;
   justify-content: space-evenly; }
+  .footer .footerDatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .footer .footerDatos a {
+      text-decoration: none;
+      color: #dedfe0; }
+      .footer .footerDatos a:hover {
+        color: #86a0bb; }
   .footer .formFooter__titulo {
-    padding-bottom: 3px;
     font-weight: bold; }
   .footer .formFooter__form {
     outline: none;
-    padding: 5px;
+    padding: 4px;
     border: none;
     border-radius: 3px; }
   .footer .formFooter__btn {
-    padding: 5px;
+    padding: 4px;
     border-radius: 3px;
     border: none;
     color: #2a4b6a;
@@ -213,71 +188,72 @@
       .botonDeContacto .botonContacto a:hover {
         color: #dedfe0; }
 
-.mainIndex {
-  background-color: #dedfe0; }
-  .mainIndex .portadaIndex {
-    background: url(../imagenes/AdobeStock_263217475.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+/*pagina index*/
+.mainIndex .portadaIndex {
+  background: url(../imagenes/AdobeStock_263217475.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column; }
+  .mainIndex .portadaIndex .tituloPrincipal {
+    text-align: end;
+    font-size: 100px;
+    padding-right: 50px;
+    padding-top: 60px;
+    color: #363636d8;
+    height: 200px; }
+  .mainIndex .portadaIndex .tituloPrincipalContinuacion {
+    text-align: end;
+    font-size: 100px;
+    padding-right: 50px;
+    color: #363636d8;
+    height: 150px; }
+  .mainIndex .portadaIndex .esloganDelTitulo {
+    font-size: 35px;
+    text-align: end;
+    font-weight: bold;
+    color: #1a1818ea;
+    padding-right: 50px;
+    padding-top: 20px;
+    height: 133px;
+    margin-bottom: 25px; }
+
+.mainIndex .muestraDeServiciosIndex {
+  padding-top: 50px;
+  background: url(../imagenes/fondo.jpeg);
+  background-size: cover; }
+  .mainIndex .muestraDeServiciosIndex .tituloDeLosLogos {
+    font-size: 45px;
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 40px;
+    font-weight: bold;
+    color: #2a4b6a; }
+  .mainIndex .muestraDeServiciosIndex .serviciosIndex {
     display: flex;
-    flex-direction: column; }
-    .mainIndex .portadaIndex .tituloPrincipal {
-      text-align: end;
-      font-size: 100px;
-      padding-right: 50px;
-      padding-top: 60px;
-      color: #363636d8;
-      height: 200px; }
-    .mainIndex .portadaIndex .tituloPrincipalContinuacion {
-      text-align: end;
-      font-size: 100px;
-      padding-right: 50px;
-      color: #363636d8;
-      height: 150px; }
-    .mainIndex .portadaIndex .esloganDelTitulo {
-      font-size: 35px;
-      text-align: end;
-      font-weight: bold;
-      color: #1a1818ea;
-      padding-right: 50px;
-      padding-top: 20px;
-      height: 133px; }
-  .mainIndex .muestraDeServiciosIndex {
-    padding-top: 50px;
-    background: url(../imagenes/fondo.jpeg);
-    background-size: cover; }
-    .mainIndex .muestraDeServiciosIndex .tituloDeLosLogos {
-      font-size: 45px;
-      text-align: center;
-      padding: 15px;
-      padding-bottom: 40px;
-      font-weight: bold;
-      color: #2a4b6a; }
-    .mainIndex .muestraDeServiciosIndex .serviciosIndex {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      text-align: center; }
-      .mainIndex .muestraDeServiciosIndex .serviciosIndex .serviciosIndex__logos {
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center; }
+    .mainIndex .muestraDeServiciosIndex .serviciosIndex .fondoLogos {
+      padding: 12PX;
+      border-radius: 5px;
+      background: #86a0bb;
+      width: 230px;
+      height: 300px; }
+      .mainIndex .muestraDeServiciosIndex .serviciosIndex .fondoLogos:hover {
+        box-shadow: 0 20px 50px #86a0bb;
+        transition: all 0.2s ease;
+        transform: scale(1.1); }
+      .mainIndex .muestraDeServiciosIndex .serviciosIndex .fondoLogos .serviciosIndex__logos {
         width: 200px; }
-      .mainIndex .muestraDeServiciosIndex .serviciosIndex .serviciosIndex__texto {
+      .mainIndex .muestraDeServiciosIndex .serviciosIndex .fondoLogos .serviciosIndex__texto {
         font-size: 25px;
         width: 200px;
         margin-top: 10px;
         font-weight: bold;
         color: #000000c9;
         text-align: center; }
-      .mainIndex .muestraDeServiciosIndex .serviciosIndex .fondoLogos {
-        padding: 12PX;
-        border-radius: 5px;
-        background: #86a0bb;
-        width: 230px;
-        height: 300px; }
-        .mainIndex .muestraDeServiciosIndex .serviciosIndex .fondoLogos:hover {
-          box-shadow: 0 20px 50px #86a0bb;
-          transition: all 0.2s ease;
-          transform: scale(1.1); }
 
 /*pagina nosotros*/
 .bodyNosotros {
@@ -339,21 +315,13 @@
         font-weight: bold; }
       .bodySoporte .mainSoporte .formularioSoporte .tituloSoporte {
         font-size: 30px;
-        margin-left: 4px; }
+        margin-left: 4px;
+        font-weight: bold; }
       .bodySoporte .mainSoporte .formularioSoporte .subTituloSoporte {
         font-size: 17px;
         font-weight: bold;
-        padding-bottom: 5px;
         margin-left: 4px; }
-      .bodySoporte .mainSoporte .formularioSoporte .formulario__nombre {
-        width: 48%;
-        height: 40px;
-        border-radius: 5px;
-        border-style: none;
-        padding-left: 10px;
-        color: #a19a9a;
-        outline: none; }
-      .bodySoporte .mainSoporte .formularioSoporte .formulario__apellido {
+      .bodySoporte .mainSoporte .formularioSoporte .formulario__nombreSoporte, .bodySoporte .mainSoporte .formularioSoporte .formulario__apellidoSoporte {
         width: 48%;
         height: 40px;
         border-radius: 5px;
@@ -361,7 +329,7 @@
         padding-left: 10px;
         color: #807f7f;
         outline: none; }
-      .bodySoporte .mainSoporte .formularioSoporte .formulario__pais {
+      .bodySoporte .mainSoporte .formularioSoporte .formulario__paisSoporte {
         width: 48%;
         height: 40px;
         border-radius: 5px;
@@ -372,7 +340,7 @@
         color: #807f7f;
         outline: none;
         font-weight: bold; }
-      .bodySoporte .mainSoporte .formularioSoporte .formulario__cel {
+      .bodySoporte .mainSoporte .formularioSoporte .formulario__celSoporte {
         width: 48.1%;
         height: 40px;
         border-radius: 5px;
@@ -381,7 +349,7 @@
         margin-top: 10px;
         color: #807f7f;
         outline: none; }
-      .bodySoporte .mainSoporte .formularioSoporte .formulario__email {
+      .bodySoporte .mainSoporte .formularioSoporte .formulario__emailSoporte {
         width: 97.5%;
         height: 40px;
         border-radius: 5px;
@@ -391,7 +359,7 @@
         margin-left: 4px;
         color: #807f7f;
         outline: none; }
-      .bodySoporte .mainSoporte .formularioSoporte .formulario__consulta {
+      .bodySoporte .mainSoporte .formularioSoporte .formulario__consultaSoporte {
         width: 97.5%;
         height: 100px;
         border-radius: 5px;
@@ -402,7 +370,7 @@
         margin-left: 4px;
         color: #807f7f;
         outline: none; }
-      .bodySoporte .mainSoporte .formularioSoporte .formulario__boton {
+      .bodySoporte .mainSoporte .formularioSoporte .formulario__botonSoporte {
         width: 97.5%;
         height: 40px;
         border-radius: 5px;
@@ -416,7 +384,7 @@
         font-size: 17px;
         font-weight: bold;
         letter-spacing: 1px; }
-        .bodySoporte .mainSoporte .formularioSoporte .formulario__boton:hover {
+        .bodySoporte .mainSoporte .formularioSoporte .formulario__botonSoporte:hover {
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.87);
           transition: all 0.2s ease;
           background-color: #181616; }
@@ -427,23 +395,23 @@
       margin-top: 35px;
       margin-left: 50px;
       grid-template-areas: "titulo" " logos"; }
-    .bodySoporte .mainSoporte .textoSoporte {
-      grid-area: titulo;
-      height: 100px;
-      font-size: 30px; }
-    .bodySoporte .mainSoporte .redesSoporteLinks {
-      grid-area: logos; }
-      .bodySoporte .mainSoporte .redesSoporteLinks .redesSoporteLinks__logos {
-        margin-top: 50px;
-        margin-right: 50px;
-        width: 70px;
-        opacity: 0.8; }
-        .bodySoporte .mainSoporte .redesSoporteLinks .redesSoporteLinks__logos:hover {
-          opacity: 1;
-          transition: all 0.2s ease;
-          transform: scale(1.1); }
-      .bodySoporte .mainSoporte .redesSoporteLinks .logoCorreo {
-        margin-left: 70px; }
+      .bodySoporte .mainSoporte .redesSoporte .textoSoporte {
+        grid-area: titulo;
+        height: 100px;
+        font-size: 30px; }
+      .bodySoporte .mainSoporte .redesSoporte .redesSoporteLinks {
+        grid-area: logos; }
+        .bodySoporte .mainSoporte .redesSoporte .redesSoporteLinks .redesSoporteLinks__logos {
+          margin-top: 50px;
+          margin-right: 50px;
+          width: 70px;
+          opacity: 0.8; }
+          .bodySoporte .mainSoporte .redesSoporte .redesSoporteLinks .redesSoporteLinks__logos:hover {
+            opacity: 1;
+            transition: all 0.2s ease;
+            transform: scale(1.1); }
+        .bodySoporte .mainSoporte .redesSoporte .redesSoporteLinks .logoCorreo {
+          margin-left: 70px; }
 
 /*pagina servicios*/
 .bodyServicios {
@@ -467,7 +435,7 @@
       transition: 0.5s; }
       .bodyServicios .mainServicios .cajaServicios:hover {
         opacity: 1; }
-      .bodyServicios .mainServicios .cajaServicios .cajaServicios__Textos {
+      .bodyServicios .mainServicios .cajaServicios .cajaServicios__textos {
         color: #dedfe0;
         font-weight: bold; }
 
@@ -522,6 +490,14 @@
     .bodyContacto .formularioYMapa .formulario {
       width: 100%;
       margin-bottom: 10px; }
+      .bodyContacto .formularioYMapa .formulario .formulario__cel {
+        width: 47%; }
+      .bodyContacto .formularioYMapa .formulario .formulario__email {
+        width: 96%; }
+      .bodyContacto .formularioYMapa .formulario .formulario__consulta {
+        width: 96%; }
+      .bodyContacto .formularioYMapa .formulario .formulario__boton {
+        width: 96%; }
     .bodyContacto .formularioYMapa .mapa {
       width: 100%;
       margin-left: 0%; }
@@ -539,17 +515,24 @@
 /*tamaño celular soporte*/
 @media only screen and (max-width: 480px) {
   .bodySoporte .mainSoporte .formularioSoporte {
-    width: 95%;
+    width: 94%;
     padding: 10px;
     margin-left: 10px;
     opacity: 0.8; }
-    .bodySoporte .mainSoporte .formularioSoporte .formulario__pais {
+    .bodySoporte .mainSoporte .formularioSoporte .formulario__paisSoporte {
       margin-left: 0px; }
-    .bodySoporte .mainSoporte .formularioSoporte .formulario__email {
+    .bodySoporte .mainSoporte .formularioSoporte .formulario__emailSoporte {
+      margin-left: 0px;
+      width: 98%; }
+    .bodySoporte .mainSoporte .formularioSoporte .formulario__consultaSoporte {
+      width: 98%;
       margin-left: 0px; }
+    .bodySoporte .mainSoporte .formularioSoporte .formulario__botonSoporte {
+      width: 98.2%; }
   .bodySoporte .mainSoporte .redesSoporte {
-    margin-left: 0px;
+    width: 98.2%;
     margin-top: 25px;
+    margin-left: 10px;
     display: flex;
     flex-wrap: wrap; }
     .bodySoporte .mainSoporte .redesSoporte .textoSoporte {
@@ -567,7 +550,7 @@
         margin-right: 0px;
         margin-left: 0px; } }
 
-/*boton para ir a pagina "contacto"*/
+/*boton para ir a pagina "contacto" en tamaño celular*/
 @media only screen and (max-width: 480px) {
-  .botonDeContacto .botonIndex a {
+  .botonDeContacto .botonContacto a {
     font-size: 20px; } }

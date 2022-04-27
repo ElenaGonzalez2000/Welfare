@@ -5,7 +5,6 @@
     background-attachment: fixed;
     background-size: cover;
     background-color: $colorBlanco;
-    font-family: $fuentePrincipal;
 
     .formularioYMapa {
         display: flex;
@@ -45,7 +44,7 @@
                 margin-top: 8px;
                 padding-left: 1px;
                 font-weight: bold;
-                color: rgb(255, 255, 255);
+                color: white;
             }
 
             .formulario__nombre {
@@ -54,76 +53,49 @@
                 border-radius: 5px;
                 border-style: none;
                 padding-left: 10px;
-                color: rgb(161, 154, 154);
+                color: $colorGrisClaro;
                 outline: none;
             }
 
             .formulario__apellido {
-                width: 47%;
-                height: 40px;
-                border-radius: 5px;
-                border-style: none;
-                padding-left: 10px;
-                color: rgb(128, 127, 127);
-                outline: none;
+                @extend .formulario__nombre;
             }
 
             .formulario__pais {
+                @extend .formulario__nombre;
                 width: 47.1%;
-                height: 40px;
-                border-radius: 5px;
-                border-style: none;
                 padding-left: 8px;
                 margin-top: 10px;
                 margin-left: 4px;
-                color: rgb(128, 127, 127);
-                outline: none;
                 font-family: $fuentePrincipal;
                 font-weight: bold;
             }
 
             .formulario__cel {
+                @extend .formulario__nombre;
                 width: 46.9%;
-                height: 40px;
-                border-radius: 5px;
-                border-style: none;
-                padding-left: 10px;
                 margin-top: 10px;
-                color: rgb(128, 127, 127);
-                outline: none;
             }
 
             .formulario__email {
+                @extend .formulario__nombre;
                 width: 95.5%;
-                height: 40px;
-                border-radius: 5px;
-                border-style: none;
-                padding-left: 10px;
                 margin-top: 10px;
                 margin-left: 4px;
-                color: rgb(128, 127, 127);
-                outline: none;
             }
 
             .formulario__consulta {
+                @extend .formulario__nombre;
                 width: 95.5%;
                 height: 100px;
-                border-radius: 5px;
-                border-style: none;
-                padding-left: 10px;
                 padding-top: 10px;
                 margin-top: 10px;
                 margin-left: 4px;
-                color: rgb(128, 127, 127);
-                outline: none;
             }
 
             .formulario__boton {
+                @extend .formulario__nombre;
                 width: 95.5%;
-                height: 40px;
-                border-radius: 5px;
-                border-style: none;
-                padding-left: 10px;
                 margin-top: 5px;
                 margin-bottom: 5px;
                 margin-left: 4px;
@@ -133,6 +105,7 @@
                 font-weight: bold;
                 font-family: 'Quicksand', sans-serif;
                 letter-spacing: 1px;
+                opacity: 1;
 
                 &:hover {
                     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.87);
@@ -141,46 +114,46 @@
                 }
             }
         }
-    }
 
-    .mapa {
-        margin-left: 30px;
-        background-color: rgb(134, 160, 187);
-        padding: 10px;
-        border-radius: 10px;
-        opacity: 0.8;
+        .mapa {
+            margin-left: 30px;
+            background-color: rgb(134, 160, 187);
+            padding: 10px;
+            border-radius: 10px;
+            opacity: 0.8;
 
-        .mapa__direccion {
-            font-size: 25px;
-            font-weight: bold;
-            color: white;
-            letter-spacing: 1px;
+            .mapa__direccion {
+                font-size: 25px;
+                font-weight: bold;
+                color: white;
+                letter-spacing: 1px;
+            }
+
+            .mapa__ciudad {
+                @extend .mapa__direccion;
+                font-size: 17px;
+            }
+
+            .mapaGoogle {
+                width: 375px;
+                height: 310px;
+
+            }
         }
 
-        .mapa__ciudad {
-            font-size: 17px;
-            font-weight: bold;
-            color: white;
-            letter-spacing: 1px;
-        }
-
-        .mapaGoogle {
-            width: 375px;
-
-        }
-    }
-
-    .logosContacto {
-        display: flex;
-        margin-top: 9px;
-        margin-left: 25px;
-        width: 70px;
-        opacity: 0.7;
-
-        &:hover {
-            opacity: 1;
-            transition: all 0.2s ease;
-            transform: scale(1.1);
+        .cajaLogosContacto {
+            .logosContacto {
+                display: flex;
+                margin-top: 9px;
+                margin-left: 25px;
+                width: 70px;
+                opacity: 0.8;
+                &:hover {
+                    opacity: 1;
+                    transition: all 0.2s ease;
+                    transform: scale(1.1);
+                }
+            }
         }
     }
 }

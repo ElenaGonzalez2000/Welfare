@@ -9,7 +9,6 @@
     <meta name="description" content="Ante cualquier problema no dudes en contactarnos para ayudarte a resolver cualquier incoveniente que tengas.">
 
     <title>Soporte | Welfare</title>
-    <!--<link rel="stylesheet" href="./estilos/estilos.css">-->
     <link rel="shortcut icon" href="../imagenes/favicon.png" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Karla&family=Poppins:wght@200&family=Quicksand:wght@300&family=Roboto:wght@500&display=swap');
@@ -59,11 +58,11 @@
             </p>
             <form action="">
                 <label for="nombre"></label>
-                <input type="text" name="nombre" id="" placeholder="Nombre" class="formulario__nombre">
+                <input type="text" name="nombre" id="" placeholder="Nombre" class="formulario__nombreSoporte">
                 <label for="apellido"></label>
-                <input type="text" name="apellido" id="" placeholder="Apellido" class="formulario__apellido">
+                <input type="text" name="apellido" id="" placeholder="Apellido" class="formulario__apellidoSoporte">
                 <label for="pais"></label>
-                <select name="pais" id="" formulario__pais class="formulario__pais">
+                <select name="pais" id="" formulario__pais class="formulario__paisSoporte">
                     <option value="arg">Argentina</option>
                     <option value="chi">Chile</option>
                     <option value="bol">Bolivia</option>
@@ -72,18 +71,19 @@
                     <option value="otro">Otro</option>
                 </select>
                 <label for="celular"></label>
-                <input type="number" name="celular" id="" placeholder="Celular" class="formulario__cel">
+                <input type="number" name="celular" id="" placeholder="Celular" class="formulario__celSoporte">
                 <label for="email"></label>
-                <input type="email" name="email" id="" placeholder="E-mail" class="formulario__email">
+                <input type="email" name="email" id="" placeholder="E-mail" class="formulario__emailSoporte">
                 <label for="consulta"></label>
                 <textarea name="consulta" id="" cols="25" rows="5" placeholder="Tu consulta"
-                    class="formulario__consulta"></textarea>
-                <input type="submit" value="Enviar" class="formulario__boton">
+                    class="formulario__consultaSoporte"></textarea>
+                <input type="submit" value="Enviar" class="formulario__botonSoporte">
             </form>
         </div>
+
         <div class="redesSoporte col-lg-5 col-md-10 col-sm-11">
             <div class="textoSoporte">
-                <p>Tambien podes contactarnos por nuestras redes para dejarnos tus consultas</p>
+                <h2>Tambien podes contactarnos por nuestras redes para dejarnos tus consultas</h2>
             </div>
             <div class="redesSoporteLinks animate__animated animate__fadeIn animate__slow">
                 <a href=""> <img src="../imagenes/correo-electronico.png" alt="lin a e-mail" srcset="" class="redesSoporteLinks__logos logoCorreo"></a>
@@ -93,20 +93,20 @@
         </div>
     </main>
     <footer class="footer row">
-        <div class="footerDireccion col-lg-2 col-md-2 col-sm-3">
-            <p><b>Welfare</b></p>
-            <p>Sarmiento 1234</p>
-            <p>CABA, Buenos Aires</p>
+        <div class="footerDatos col-lg-2 col-md-2 col-sm-3">
+            <h6><strong>Welfare</strong></h6>
+            <h6>Sarmiento 1234</h6>
+            <h6>CABA, Buenos Aires</h6>
         </div>
         <div class="footerDatos col-lg-3 col-md-3 col-sm-4 col-xs-4">
-            <p>tel 011 1234567</p>
-            <p>cel 011 15 12345678</p>
-            <p>email welfare@gmail.com</p>
+            <h6>tel 011 1234567</h6>
+            <h6>cel 011 15 12345678</h6>
+            <h6>email welfare@gmail.com</h6>
         </div>
-        <div class="footerRedes col-lg-2 col-md-2 col-sm-3">
-            <p>Facebook</p>
-            <p>Instragram</p>
-            <p>YouTube</p>
+        <div class="footerDatos col-lg-2 col-md-2 col-sm-3">
+            <a href="">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">YouTube</a>
         </div>
         <div class="formFooter col-lg-4 col-md-4 col-sm-11">
             <form action="">
@@ -115,6 +115,8 @@
                 <input type="email" name="e-mail" id="" placeholder="Ingrese su e-mail" class="formFooter__form">
                 <input type="submit" value="Enviar" class="formFooter__btn">
             </form>
+        </div>
+    </footer>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
