@@ -129,7 +129,7 @@
         margin-left: 7px;
         color: #dedfe0 !important; }
 
-/* footer */
+/*footer*/
 .footer {
   display: flex;
   background-color: #2a4b6a;
@@ -171,7 +171,6 @@
   padding-bottom: 50px; }
   .botonDeContacto .botonContacto {
     border: none;
-    padding: 10px;
     border-radius: 10px;
     background-color: #dedfe0;
     transition: 0.1s;
@@ -179,9 +178,9 @@
     .botonDeContacto .botonContacto:hover {
       background-color: #2a4b6a; }
     .botonDeContacto .botonContacto a {
+      padding: 15px;
       color: #2a4b6a;
       font-size: 35px;
-      font-weight: bold;
       text-decoration: none;
       list-style: none;
       text-align: center; }
@@ -272,13 +271,12 @@
       .bodyNosotros .mainNosotros .nosotrosContenido .fotoNosotros {
         width: 500px; }
       .bodyNosotros .mainNosotros .nosotrosContenido .nosotrosTexto {
-        font-size: 15px;
+        font-size: 17px;
         width: 500px;
-        padding-right: 20px;
-        font-weight: bold; }
+        padding-right: 20px; }
         .bodyNosotros .mainNosotros .nosotrosContenido .nosotrosTexto .nosotrosTitulo {
           color: #2a4b6a;
-          font-size: 60px;
+          font-size: 45px;
           width: 300px;
           font-weight: bold; }
 
@@ -435,12 +433,15 @@
       transition: 0.5s; }
       .bodyServicios .mainServicios .cajaServicios:hover {
         opacity: 1; }
+      .bodyServicios .mainServicios .cajaServicios .cajaServicios__titulos {
+        color: #dedfe0; }
       .bodyServicios .mainServicios .cajaServicios .cajaServicios__textos {
         color: #dedfe0;
-        font-weight: bold; }
+        font-size: 20px; }
 
-/*tamaño celular index*/
+/* media para todas las paginas tamaño celular 480px*/
 @media only screen and (max-width: 480px) {
+  /*tamaño celular index*/
   .mainIndex .portadaIndex .tituloPrincipal {
     font-size: 50px;
     padding-right: 1px;
@@ -463,16 +464,13 @@
       .mainIndex .muestraDeServiciosIndex .serviciosIndex .fondoLogos:hover {
         box-shadow: none;
         transition: none;
-        transform: none; } }
-
-/*tamaño celular servicios*/
-@media only screen and (max-width: 480px) {
+        transform: none; }
+  /*tamaño celular servicios*/
   .bodyServicios .mainServicios .cajaServicios {
     padding: 30px;
-    margin-top: 50px; } }
-
-/*tamaño celular nosotros*/
-@media only screen and (max-width: 480px) {
+    margin-top: 50px;
+    opacity: 1; }
+  /*tamaño celular nosotros*/
   .bodyNosotros .mainNosotros {
     margin-top: 15px;
     margin-bottom: 15px; }
@@ -480,10 +478,8 @@
       display: none; }
     .bodyNosotros .mainNosotros .nosotrosContenido .nosotrosTexto .nosotrosTitulo {
       font-size: 40px;
-      width: 200px; } }
-
-/*tamaño celular contacto*/
-@media only screen and (max-width: 480px) {
+      width: 200px; }
+  /*tamaño celular contacto*/
   .bodyContacto .formularioYMapa {
     width: 100%;
     margin-left: 0%; }
@@ -510,10 +506,13 @@
       margin-top: 10px;
       margin-bottom: 10px; }
       .bodyContacto .formularioYMapa .cajaLogosContacto .logosContacto {
-        margin-left: 0px; } }
-
-/*tamaño celular soporte*/
-@media only screen and (max-width: 480px) {
+        width: 55px;
+        margin-left: 0px;
+        opacity: 1; }
+        .bodyContacto .formularioYMapa .cajaLogosContacto .logosContacto:hover {
+          transition: none;
+          transform: none; }
+  /*tamaño celular soporte*/
   .bodySoporte .mainSoporte .formularioSoporte {
     width: 94%;
     padding: 10px;
@@ -536,7 +535,6 @@
     display: flex;
     flex-wrap: wrap; }
     .bodySoporte .mainSoporte .redesSoporte .textoSoporte {
-      height: 130px;
       font-size: 25px;
       font-weight: bold; }
     .bodySoporte .mainSoporte .redesSoporte .redesSoporteLinks {
@@ -545,12 +543,16 @@
       flex-direction: row;
       justify-content: space-around; }
       .bodySoporte .mainSoporte .redesSoporte .redesSoporteLinks .redesSoporteLinks__logos {
-        margin-top: 20px;
+        margin-top: 15px;
         margin-bottom: 20px;
         margin-right: 0px;
-        margin-left: 0px; } }
-
-/*boton para ir a pagina "contacto" en tamaño celular*/
-@media only screen and (max-width: 480px) {
+        margin-left: 0px;
+        opacity: 1; }
+        .bodySoporte .mainSoporte .redesSoporte .redesSoporteLinks .redesSoporteLinks__logos:hover {
+          transition: none;
+          transform: none; }
+  /*boton para ir a pagina "contacto" en tamaño celular*/
+  /*no me salio sacarle el hover a los botones porque se rompia cuando lo intentaba*/
   .botonDeContacto .botonContacto a {
-    font-size: 20px; } }
+    font-size: 20px;
+    font-weight: bold; } }

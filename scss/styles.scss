@@ -20,7 +20,6 @@
 
         div {
             div {
-
                 display: flex;
                 justify-content: end;
 
@@ -38,7 +37,7 @@
     }
 }
 
-/* footer */
+/*footer*/
 .footer {
     display: flex;
     background-color: $colorPrincipal;
@@ -96,7 +95,6 @@
 
     .botonContacto {
         border: none;
-        padding: 10px;
         border-radius: 10px;
         background-color: $colorBlanco;
         transition: 0.1s;
@@ -107,9 +105,9 @@
         }
 
         a {
+            padding: 15px;
             color: $colorPrincipal;
             font-size: 35px;
-            font-weight: bold;
             text-decoration: none;
             list-style: none;
             text-align: center;
@@ -232,14 +230,13 @@
             }
 
             .nosotrosTexto {
-                font-size: 15px;
+                font-size: 17px;
                 width: 500px;
                 padding-right: 20px;
-                font-weight: bold;
 
                 .nosotrosTitulo {
                     color: $colorPrincipal;
-                    font-size: 60px;
+                    font-size: 45px;
                     width: 300px;
                     font-weight: bold;
                 }
@@ -396,24 +393,29 @@
                 "titulo"
                 " logos"
             ;
+
             .textoSoporte {
                 grid-area: titulo;
                 height: 100px;
                 font-size: 30px;
             }
+
             .redesSoporteLinks {
                 grid-area: logos;
+
                 .redesSoporteLinks__logos {
                     margin-top: 50px;
                     margin-right: 50px;
                     width: 70px;
                     opacity: 0.8;
+
                     &:hover {
                         opacity: 1;
                         transition: all 0.2s ease;
                         transform: scale(1.1);
                     }
                 }
+
                 .logoCorreo {
                     margin-left: 70px;
                 }
@@ -450,16 +452,24 @@
                 opacity: 1;
             }
 
+            .cajaServicios__titulos {
+                color: $colorBlanco;
+            }
+
             .cajaServicios__textos {
                 color: $colorBlanco;
-                font-weight: bold;
+                font-size: 20px;
             }
         }
     }
 }
 
-/*tamaño celular index*/
+/* media para todas las paginas tamaño celular 480px*/
+
 @media only screen and (max-width: 480px) {
+
+    /*tamaño celular index*/
+
     .mainIndex {
         .portadaIndex {
             .tituloPrincipal {
@@ -502,22 +512,24 @@
             }
         }
     }
-}
 
-/*tamaño celular servicios*/
-@media only screen and (max-width: 480px) {
+
+    /*tamaño celular servicios*/
+
     .bodyServicios {
         .mainServicios {
             .cajaServicios {
                 padding: 30px;
                 margin-top: 50px;
+                opacity: 1;
+
             }
         }
     }
-}
 
-/*tamaño celular nosotros*/
-@media only screen and (max-width: 480px) {
+
+    /*tamaño celular nosotros*/
+
     .bodyNosotros {
         .mainNosotros {
             margin-top: 15px;
@@ -539,10 +551,10 @@
             }
         }
     }
-}
 
-/*tamaño celular contacto*/
-@media only screen and (max-width: 480px) {
+
+    /*tamaño celular contacto*/
+
     .bodyContacto {
         .formularioYMapa {
             width: 100%;
@@ -551,16 +563,20 @@
             .formulario {
                 width: 100%;
                 margin-bottom: 10px;
-                .formulario__cel{
+
+                .formulario__cel {
                     width: 47%;
                 }
-                .formulario__email{
+
+                .formulario__email {
                     width: 96%;
                 }
-                .formulario__consulta{
+
+                .formulario__consulta {
                     width: 96%;
                 }
-                .formulario__boton{
+
+                .formulario__boton {
                     width: 96%;
                 }
             }
@@ -582,15 +598,22 @@
                 margin-bottom: 10px;
 
                 .logosContacto {
+                    width: 55px;
                     margin-left: 0px;
+                    opacity: 1;
+
+                    &:hover {
+                        transition: none;
+                        transform: none;
+                    }
                 }
             }
         }
     }
-}
 
-/*tamaño celular soporte*/
-@media only screen and (max-width: 480px) {
+
+    /*tamaño celular soporte*/
+
 
     .bodySoporte {
         .mainSoporte {
@@ -600,7 +623,7 @@
                 margin-left: 10px;
                 opacity: 0.8;
 
-                .formulario__paisSoporte{
+                .formulario__paisSoporte {
                     margin-left: 0px;
                 }
 
@@ -627,7 +650,6 @@
                 flex-wrap: wrap;
 
                 .textoSoporte {
-                    height: 130px;
                     font-size: 25px;
                     font-weight: bold;
                 }
@@ -639,24 +661,32 @@
                     justify-content: space-around;
 
                     .redesSoporteLinks__logos {
-                        margin-top: 20px;
+                        margin-top: 15px;
                         margin-bottom: 20px;
                         margin-right: 0px;
                         margin-left: 0px;
+                        opacity: 1;
+
+                        &:hover {
+                            transition: none;
+                            transform: none;
+                        }
                     }
                 }
             }
 
         }
     }
-}
 
-/*boton para ir a pagina "contacto" en tamaño celular*/
-@media only screen and (max-width: 480px) {
+
+    /*boton para ir a pagina "contacto" en tamaño celular*/
+    /*no me salio sacarle el hover a los botones porque se rompia cuando lo intentaba*/
+
     .botonDeContacto {
         .botonContacto {
             a {
                 font-size: 20px;
+                font-weight: bold;
             }
         }
     }
